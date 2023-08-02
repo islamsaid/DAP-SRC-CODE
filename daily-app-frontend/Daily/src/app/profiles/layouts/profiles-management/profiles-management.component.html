@@ -1,0 +1,22 @@
+<div class="layout-margin">
+  <div class="page-header">
+    <div class="page-title">
+      <span class="icon-profiles head-icon"></span>
+      <span class="head-font"> Profiles Management</span>
+    </div>
+    <div class="page-action" *ngIf="showBtn">
+      <button
+        *ngIf="enableAdd"
+        pButton
+        pRipple
+        type="button"
+        label="+ Add New Profile"
+        class="p-button-danger p-button-text white-button"
+        (click)="addProfile()"
+      ></button>
+    </div>
+  </div>
+  <div class="router-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

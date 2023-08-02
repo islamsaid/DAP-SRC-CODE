@@ -1,0 +1,54 @@
+<div class="services-container layout-margin">
+  <div class="page-title">
+    <span class="icon-footprint head-icon"></span>
+    <span class="head-font">Footprints</span>
+  </div>
+  <app-service-form [source]="'footprint'" [inputs]="inputs" [isInline]="true">
+  </app-service-form>
+  <app-services-list
+    [source]="'footprint'"
+    [inputs]="logslist"
+  ></app-services-list>
+  <p-dialog header="Transaction Details" [(visible)]="display" [style]="{ width: width}"
+  [closable]="true"
+  [modal]="true"
+  class="logs-dialog">
+    <div class="emptyMsg" *ngIf="empty">
+      <i class="pi pi-ban"></i>
+      This Action has no Transaction Details
+    </div>
+    <p-table *ngIf="!empty"
+      [paginator]="true"
+      [rows]="3"
+      [value]="data"
+      responsiveLayout="scroll"
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Param Name</th>
+          <th>Old Value</th>
+          <th>New Value</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-log let-rowIndex="rowIndex">
+        <tr>
+          <td >
+            {{ log.paramName }}
+          </td>
+          <td>
+            {{ log.oldVal }}
+          </td>
+          <td >
+            {{ log.newVal }}
+          </td>
+        </tr>
+        <p></p>
+      </ng-template>
+      <ng-template pTemplate="emptymessage">
+        <tr>
+          <td colspan="7" style="text-align: center">No Data found.</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-dialog>
+</div>

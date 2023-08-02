@@ -1,0 +1,132 @@
+<form autocomplete="off" [formGroup]="servicesForm" (ngSubmit)="updateList()">
+  <p-table
+    #dt
+    [value]="getControls()"
+    styleClass="p-datatable-customers  p-datatable-striped"
+    [paginator]="tableList.length > 0"
+    [totalRecords]="tableList.length"
+    dataKey="id"
+    [rows]="pageSize"
+    [loading]="loading"
+    [rowsPerPageOptions]="[5, 15, 25, 50]"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th *ngFor="let input of inputs">{{ input.label }}</th>
+        <ng-container *ngIf="enableUpdate || enableDelete || viewDetails">
+          <th *ngIf="source == 'rateplansGroups' || source == 'pgGroups'">
+            <div class="mt-2"><span class="break">|</span></div>
+          </th>
+          <th *ngIf="source == 'rateplansGroups' || source == 'pgGroups'">
+            Actions
+          </th>
+        </ng-container>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-rowIndex="rowIndex">
+      <ng-container formArrayName="servicesArray">
+        <tr
+          [formGroupName]="rowIndex"
+          (click)="source == 'footprint' ? openLogDetails(rowIndex) : ''"
+          [ngClass]="source == 'footprint' ? 'pointer' : ''"
+        >
+          <td *ngFor="let input of inputs">
+            <span *ngIf="input.type === 'text'">{{
+              rowData.get(input.controlName).value
+            }}</span>
+            <span *ngIf="input.type === 'dropDown'" class="p-float-label">
+              <p-dropdown
+                styleClass="tableDrop"
+                [options]="input.options"
+                [placeholder]="input.label"
+                [optionLabel]="
+                  input.controlName == 'ratePlanGroupKey'
+                    ? 'ratePlanGroup'
+                    : 'id'
+                "
+                [optionValue]="
+                  input.controlName == 'ratePlanGroupKey'
+                    ? 'ratePlanGroupKey'
+                    : 'value'
+                "
+                [showClear]="
+                  this.source == 'classes' || this.source == 'tariffs'
+                    ? true
+                    : false
+                "
+                [autoDisplayFirst]="false"
+                formControlName="{{ input.controlName }}"
+              ></p-dropdown>
+            </span>
+            <div>
+              <p-checkbox
+                *ngIf="input.type === 'checkbox'"
+                [disabled]="input.disabled"
+                [binary]="true"
+                [trueValue]="1"
+                [falseValue]="0"
+                formControlName="{{ input.controlName }}"
+              ></p-checkbox>
+            </div>
+          </td>
+          <ng-container *ngIf="enableUpdate || enableDelete || viewDetails">
+            <td *ngIf="source == 'rateplansGroups' || source == 'pgGroups'">
+              <div class="mt-2"><span class="break">|</span></div>
+            </td>
+            <td *ngIf="source == 'rateplansGroups' || source == 'pgGroups'">
+              <button
+                *ngIf="enableUpdate || viewDetails"
+                pButton
+                type="button"
+                class="edit-button mr-3"
+                iconPos="left"
+                (click)="manageEdit(rowData, rowIndex)"
+              >
+                <span *ngIf="enableUpdate">
+                  <i class="icon-edit"></i> Edit</span
+                >
+                <span *ngIf="viewDetails && !enableUpdate">
+                  <i class="icon-eye"></i> View Details</span
+                >
+              </button>
+              <button
+                *ngIf="enableDelete"
+                pButton
+                type="button"
+                class="delete-button mr-3"
+                iconPos="left"
+                (click)="manageDelete($event, rowData, rowIndex)"
+              >
+                <i class="pi pi-trash"></i> Delete
+              </button>
+            </td>
+          </ng-container>
+        </tr>
+      </ng-container>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+      <tr>
+        <td colspan="7" style="text-align: center">No Data found.</td>
+      </tr>
+    </ng-template>
+    <ng-template
+      pTemplate="paginatorright"
+      *ngIf="!(source === 'rateplansGroups' || source === 'pgGroups')"
+    >
+      <button
+        *ngIf="enableUpdate"
+        [disabled]="Changeditems.length == 0"
+        pButton
+        class="btn btn-basic"
+        style="width: 100px"
+        type="submit"
+        label="Submit"
+      ></button>
+    </ng-template>
+  </p-table>
+</form>
+<p-confirmDialog
+  class="confirm-dialog"
+  header="Confirmation"
+  icon="pi pi-exclamation-triangle"
+></p-confirmDialog>

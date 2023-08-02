@@ -1,0 +1,19 @@
+<div class="page-header">
+  <div class="page-title">
+    <span class="{{ icon }} head-icon"></span>
+    <span class="head-font"> {{ title }}</span>
+  </div>
+  <div class="page-action" *ngIf="showBalance">
+    <div
+      class="tab-style {{ tab.classStyle }}"
+      *ngFor="let tab of tabs"
+      [ngClass]="tab.count == 0 ? 'grayBG' : ''"
+    >
+      <i class="{{ tab.icon }}"></i>
+      <span class="info">
+        <span>{{ tab.name }}</span>
+        <span style="font-weight: 600">{{ tab.count | number: "2." }}</span>
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="row flex users-header">
+  <div class="col-7 flex pt-4">
+    <i class="icon-setting"></i>
+    <span class="text">Users Management</span>
+  </div>
+  <div class="col-5">
+    <div class="flex buttons-div">
+      <div class="pt-2 pr-2">
+        <button
+          pButton
+          pRipple
+          type="button"
+          label="+ Add New User"
+          class="p-button-danger p-button-text white-button"
+          (click)="openAddUserDialog()" 
+          *ngIf="enableAdd"
+        ></button>
+      </div>
+      <span class="break" *ngIf="profilesAllow && enableAdd">|</span>
+      <div class="pl-2 pt-1">
+        <button
+         *ngIf="profilesAllow"
+          pButton
+          pRipple
+          type="button"
+          label="Manage The Profiles"
+          class="p-button-raised p-button-danger red-button"
+          (click)="openProfilesManagement()"
+        ></button>
+      </div>
+    </div>
+  </div>
+  <app-dialog
+    [dialogConfig]="dialogConfig"
+    [openDialog]="openDialog"
+    [closeDialog]="!openDialog"
+  >
+  </app-dialog>
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <delete file="E:\working_area\Project\daily-app\daily-app\code\daily-app-report-service\target\classes/bootstrap.yml" />
+    <copy file="src/main/resources/bootstrap.qa.yml" tofile="E:\working_area\Project\daily-app\daily-app\code\daily-app-report-service\target\classes/bootstrap.yml" />
+    <delete file="E:\working_area\Project\daily-app\daily-app\code\daily-app-report-service\target\classes/bootstrap.test.yml" />
+    <delete file="E:\working_area\Project\daily-app\daily-app\code\daily-app-report-service\target\classes/bootstrap.qa.yml" />
+  </target>
+</project>

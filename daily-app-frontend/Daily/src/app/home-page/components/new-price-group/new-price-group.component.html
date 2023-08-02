@@ -1,0 +1,44 @@
+<div class="row flex header">
+  <div class="col-7 flex pt-4">
+    <i class="icon-rateplan head-icon"></i>
+    <span class="text">New Price Group</span>
+  </div>
+</div>
+<div style="margin-top: 3rem" class="dashboard-pg">
+  <p-table
+    class="table-font-style dashboard-pg"
+    [paginator]="priceGroups && priceGroups.length > 0"
+    [totalRecords]="priceGroups.length"
+    [rows]="3"
+    [value]="priceGroups"
+    responsiveLayout="scroll"
+  >
+    <ng-template pTemplate="header"></ng-template>
+    <ng-template pTemplate="body" let-priceGroup let-rowIndex="rowIndex">
+      <tr>
+        <td class="left-border">
+          <i class="icon-flag"></i>
+          {{ priceGroup.name }}
+        </td>
+        <td class="right-border" style="text-align: right">
+          {{ priceGroup.date == 0 ? "Today" : priceGroup.date + " Day Ago" }}
+        </td>
+      </tr>
+      <p></p>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+      <tr>
+        <td colspan="7" style="text-align: center">No Data found.</td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+      <button
+        pButton
+        class="btn btn-basic"
+        type="button"
+        label="See All"
+        routerLink="/daily/prices/groups"
+      ></button>
+    </ng-template>
+  </p-table>
+</div>

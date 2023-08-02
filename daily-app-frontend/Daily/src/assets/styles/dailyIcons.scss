@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("./../Icons-font/icomoon.eot");
+  src: url("./../Icons-font/icomoon.eot") format("embedded-opentype"),
+    url("./../Icons-font/icomoon.ttf") format("truetype"),
+    url("./../Icons-font/icomoon.woff") format("woff"),
+    url("./../Icons-font/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-bottom:before {
+  content: "\e900";
+}
+.icon-arrow-circle:before {
+  content: "\e901";
+}
+.icon-arrow-up:before {
+  content: "\e902";
+}
+.icon-calender-circle:before {
+  content: "\e903";
+}
+.icon-chart:before {
+  content: "\e904";
+}
+.icon-chartL:before {
+  content: "\e905";
+}
+.icon-dot:before {
+  content: "\e906";
+}
+.icon-edit:before {
+  content: "\e907";
+}
+.icon-eye:before {
+  content: "\e908";
+}
+.icon-eye-dash:before {
+  content: "\e909";
+}
+.icon-filter-list:before {
+  content: "\e90a";
+}
+.icon-flag:before {
+  content: "\e90b";
+}
+.icon-footprint:before {
+  content: "\e90c";
+}
+.icon-Group-46:before {
+  content: "\e90d";
+}
+.icon-home:before {
+  content: "\e90e";
+}
+.icon-lock:before {
+  content: "\e90f";
+}
+.icon-lock-open:before {
+  content: "\e910";
+}
+.icon-logout:before {
+  content: "\e911";
+}
+.icon-manual:before {
+  content: "\e912";
+}
+.icon-mark:before {
+  content: "\e913";
+}
+.icon-marks:before {
+  content: "\e914";
+}
+.icon-profiles:before {
+  content: "\e915";
+}
+.icon-rateplan:before {
+  content: "\e916";
+}
+.icon-search:before {
+  content: "\e917";
+}
+.icon-services:before {
+  content: "\e918";
+}
+.icon-setting:before {
+  content: "\e919";
+}
+.icon-settings:before {
+  content: "\e91a";
+}
+.icon-timer:before {
+  content: "\e91b";
+}
+.icon-timer-off:before {
+  content: "\e91c";
+}
+.icon-transfer:before {
+  content: "\e91d";
+}
+.icon-unlock:before {
+  content: "\e91e";
+}
+.icon-user:before {
+  content: "\e91f";
+}

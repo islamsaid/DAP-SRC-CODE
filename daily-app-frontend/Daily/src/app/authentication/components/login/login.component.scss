@@ -1,0 +1,35 @@
+.login {
+  overflow: hidden;
+  position: relative;
+}
+.bg-linear-red {
+  background-color: var(--primaryColor);
+  // background-image:
+  //  linear-gradient(
+  //   to bottom right,
+  //   var(--lightRed),
+  //   var(--darkRed)
+  // );
+}
+
+.logo-text-color {
+  color: var(--white);
+  position: absolute;
+  align-self: center;
+  font: normal normal 100 18px/28px Cairo;
+  letter-spacing: 3px;
+}
+.background {
+  z-index: 1;
+  position: absolute;
+  bottom: -29em;
+  right: -9em;
+  margin-left: 15em;
+  // filter: blur(20px);
+}
+.index {
+  z-index: 2;
+}
+.bg-login {
+  background-color: var(--extraLightGray);
+}

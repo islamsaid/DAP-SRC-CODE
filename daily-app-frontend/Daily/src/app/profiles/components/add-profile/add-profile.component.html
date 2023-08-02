@@ -1,0 +1,68 @@
+<div class="add-container">
+  <h2>{{ pageMode }}Profile</h2>
+  <form autocomplete="off"  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="profile-form">
+      <span class="p-float-label">
+        <input
+          id="float-input"
+          type="text"
+          pInputText
+          formControlName="name"
+          maxlength="50"
+        />
+        <label for="float-input"
+          >Profile Name <span class="required">*</span>
+        </label>
+      </span>
+      <button
+        *ngIf="!viewMode"
+        pButton
+        class="btn btn-basic"
+        type="submit"
+        label="submit"
+        [disabled]="!profileForm.valid"
+      ></button>
+      <!-- <button
+        *ngIf="!viewMode"
+        pButton
+        class="btn btn-basic"
+        type="Cancel"
+        label="Cancel"
+        routerLink="/daily/profiles/list"
+      ></button> -->
+
+      <button
+        *ngIf="!viewMode"
+        pButton
+        pRipple
+        type="Cancel"
+        label="Cancel"
+        class="p-button-danger p-button-text white-button"
+        routerLink="/daily/profiles/list"
+      ></button>
+    </div>
+
+    <!-- <hr class="page-divider" /> -->
+    <div class="picklist-content">
+      <span class="pickList-title"> Assign Privileges:</span>
+      <p-pickList
+        [source]="sourceList"
+        [target]="targetList"
+        [responsive]="true"
+        sourceHeader="Unassigned"
+        targetHeader="Assigned"
+        [dragdrop]="true"
+        [showSourceControls]="false"
+        [showTargetControls]="false"
+        filterBy="name"
+        sourceFilterPlaceholder="Search by name"
+        targetFilterPlaceholder="Search by name"
+        [disabled]="viewMode"
+      >
+        <ng-template let-privilege pTemplate="item">
+          <div>{{ privilege.name }}</div>
+        </ng-template>
+      </p-pickList>
+    </div>
+  </form>
+</div>

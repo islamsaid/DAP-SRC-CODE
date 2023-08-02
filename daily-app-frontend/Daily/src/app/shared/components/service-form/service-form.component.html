@@ -1,0 +1,90 @@
+<div class="wrapper">
+  <div class="search-title">
+    <span class="search">Search</span>
+  </div>
+  <form autocomplete="off" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <div class="search-form" [ngClass]="isInline ? 'flexInline' : ''">
+      <div class="dropList" [ngClass]="isInline ? 'inlineMode' : 'flex-start'">
+        <span
+          *ngFor="let input of inputs"
+          [ngClass]="isInline ? '' : 'mr-right'"
+        >
+          <span class="p-float-label" *ngIf="input.type === 'text'">
+            <input
+              id="input.label"
+              style="width: 16vw"
+              type="text"
+              formControlName="{{ input.controlName }}"
+              pInputText
+              maxlength="50"
+            />
+            <label for="input.label">{{ input.label }} </label>
+          </span>
+          <span class="p-float-label" *ngIf="input.type === 'number'">
+            <input
+              id="input.label"
+              style="width: 16vw"
+              type="number"
+              formControlName="{{ input.controlName }}"
+              pInputText
+              maxlength="50"
+            />
+            <label for="input.label">{{ input.label }} </label>
+          </span>
+          <span class="p-float-label" *ngIf="input.type === 'date'">
+            <p-calendar formControlName="{{ input.controlName }}"
+            (onSelect)="onSubmit()"></p-calendar>
+            <label for="input.label">{{ input.label }} </label>
+          </span>
+          <span class="p-float-label" *ngIf="input.type === 'dropDown'">
+            <p-dropdown
+              styleClass="searchDrop"
+              [options]="input.options"
+              [optionLabel]="
+                input.controlName == 'ratePlanGroupKey' ? 'ratePlanGroup' : 'id'
+              "
+              [optionValue]="
+                input.controlName == 'ratePlanGroupKey'
+                  ? 'ratePlanGroupKey'
+                  : 'value'
+              "
+              [showClear]="true"
+              [autoDisplayFirst]="false"
+              formControlName="{{ input.controlName }}"
+              (keyup.enter)="onSubmit()"
+            ></p-dropdown>
+            <label for="input.label">{{ input.label }} </label>
+          </span>
+          <span class="check" *ngIf="input.type === 'checkbox'">
+            <p-checkbox
+              [binary]="true"
+              [trueValue]="1"
+              [falseValue]="0"
+              formControlName="{{ input.controlName }}"
+            ></p-checkbox>
+            <label class="check-label">{{ input.label }} </label>
+          </span>
+        </span>
+      </div>
+      <div class="btns">
+        <button
+          pButton
+          class="btn btn-light"
+          type="button"
+          label="Reset"
+          (click)="resetForm()"
+        >
+          <i class="pi pi-refresh"></i>
+        </button>
+        <span class="break">|</span>
+        <button
+          pButton
+          class="btn btn-basic"
+          style="width: 100px"
+          type="submit"
+          label="Search"
+        ></button>
+      </div>
+    </div>
+  </form>
+</div>

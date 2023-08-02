@@ -1,0 +1,48 @@
+.page-header {
+    padding: 0 9px;
+    display: flex;
+    justify-content: space-between;
+    .page-title {
+        margin: auto 0;
+    }
+    .page-action {
+        display: flex;
+        .tab-style {
+            display: flex;
+            flex-direction: row;
+            width: 136px;
+            height: 60px;
+            border-radius: 8px;
+            opacity: 1;
+            margin-right: 15px;
+            i {
+                flex: 20%;
+                margin: auto 7px;
+            }
+            .info {
+                flex: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.green {
+    color: #12753d;
+    background-color: #31d57836;
+}
+
+.blue {
+    color: #305e80;
+    background-color: #36acff36;
+}
+
+.red {
+    color: #a94f48;
+    background-color: #ee302336;
+}

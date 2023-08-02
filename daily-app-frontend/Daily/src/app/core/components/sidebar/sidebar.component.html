@@ -1,0 +1,27 @@
+<div class="sidebar">
+  <div class="toggle-btn" [ngClass]="state === 'open' ? 'openState' : ''">
+    <span
+      [@rotatedState]="state"
+      class="icon-arrow-circle"
+      (click)="toggle()"
+    ></span>
+    <span class="toggle-state">{{ stateName }} </span>
+  </div>
+  <div class="side-items" [ngClass]="state === 'open' ? 'sidebarOpen' : ''">
+    <ul>
+      <li *ngFor="let item of sidebarItems">
+        <a [ngClass]="item.active ? 'active' : ''" (click)="onSelectItem(item)">
+          <span class="{{ item.icon }}"></span>
+          <span
+            *ngIf="state === 'close'"
+            class="name"
+            [ngClass]="item.route === 'systemConfig' ? 'font' : ''"
+            >{{ item.name }}</span
+          >
+          <span *ngIf="state === 'open'" class="title"> {{ item.title }} </span>
+        </a>
+        <hr class="divider" />
+      </li>
+    </ul>
+  </div>
+</div>

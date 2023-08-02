@@ -1,0 +1,48 @@
+[INFO ] 2023-06-01 14:49:11.678 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 14:49:14.404 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "jdbc"
+[INFO ] 2023-06-01 14:49:17.322 [main] [GenericScope.setSerializationId] {} - BeanFactory id=e50bc2b9-e2e9-3d8c-81c9-3f3f17702b5e
+[INFO ] 2023-06-01 14:49:18.100 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2023-06-01 14:49:18.117 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2023-06-01 14:49:18.118 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 14:49:18.119 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 14:49:18.461 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 14:49:18.461 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 3999 ms
+[INFO ] 2023-06-01 14:49:20.772 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2023-06-01 14:49:20.834 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2023-06-01 14:49:21.357 [main] [StartupInfoLogger.logStarted] {} - Started SpringCloudConfigServerApplication in 11.333 seconds (JVM running for 16.354)
+[DEBUG] 2023-06-01 14:49:21.364 [main] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database  
+[INFO ] 2023-06-01 14:54:35.669 [http-nio-8888-exec-2] [DirectJDKLog.log] {} - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-06-01 14:54:35.670 [http-nio-8888-exec-2] [FrameworkServlet.initServletBean] {} - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-06-01 14:54:35.672 [http-nio-8888-exec-2] [FrameworkServlet.initServletBean] {} - Completed initialization in 2 ms
+[INFO ] 2023-06-01 14:58:09.601 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 14:58:11.132 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "jdbc"
+[INFO ] 2023-06-01 14:58:12.631 [main] [GenericScope.setSerializationId] {} - BeanFactory id=e50bc2b9-e2e9-3d8c-81c9-3f3f17702b5e
+[INFO ] 2023-06-01 14:58:13.580 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2023-06-01 14:58:13.596 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2023-06-01 14:58:13.600 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 14:58:13.601 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 14:58:14.052 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 14:58:14.053 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2881 ms
+[INFO ] 2023-06-01 14:58:17.075 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2023-06-01 14:58:17.146 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2023-06-01 14:58:17.784 [main] [StartupInfoLogger.logStarted] {} - Started SpringCloudConfigServerApplication in 9.198 seconds (JVM running for 10.828)
+[DEBUG] 2023-06-01 14:58:17.790 [main] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database  
+[INFO ] 2023-06-01 14:58:36.119 [http-nio-8888-exec-2] [DirectJDKLog.log] {} - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-06-01 14:58:36.120 [http-nio-8888-exec-2] [FrameworkServlet.initServletBean] {} - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-06-01 14:58:36.121 [http-nio-8888-exec-2] [FrameworkServlet.initServletBean] {} - Completed initialization in 1 ms
+[INFO ] 2023-06-01 15:13:39.090 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:13:40.739 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "jdbc"
+[INFO ] 2023-06-01 15:13:42.559 [main] [GenericScope.setSerializationId] {} - BeanFactory id=e50bc2b9-e2e9-3d8c-81c9-3f3f17702b5e
+[INFO ] 2023-06-01 15:13:43.422 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2023-06-01 15:13:43.438 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2023-06-01 15:13:43.440 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:13:43.441 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:13:43.833 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:13:43.834 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 3055 ms
+[INFO ] 2023-06-01 15:13:46.602 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2023-06-01 15:13:46.674 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2023-06-01 15:13:47.351 [main] [StartupInfoLogger.logStarted] {} - Started SpringCloudConfigServerApplication in 9.431 seconds (JVM running for 11.785)
+[DEBUG] 2023-06-01 15:13:47.359 [main] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database  
+[INFO ] 2023-06-01 15:14:02.087 [http-nio-8888-exec-2] [DirectJDKLog.log] {} - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-06-01 15:14:02.087 [http-nio-8888-exec-2] [FrameworkServlet.initServletBean] {} - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-06-01 15:14:02.090 [http-nio-8888-exec-2] [FrameworkServlet.initServletBean] {} - Completed initialization in 2 ms

@@ -1,0 +1,16 @@
+.add-container {
+  padding: 0px 40px 40px 40px;
+  .profile-form {
+    display: inline-flex;
+    button {
+      margin-left: 40px;
+    }
+  }
+  .picklist-content {
+    margin-top: 15px;
+    .pickList-title {
+      font-weight: 600;
+      color: var(--primaryColor);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+server:
+  port: 8080
+#  ssl:
+#      key-store:
+#      key-store-alias:
+#      key-store-password:
+#      key-store-provider:
+#      key-store-type: 
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@10.0.20.38:1521/orclpdb'
+    username: DAILY_APP_TST
+    password: DAILY_APP_TST
+  profiles:
+    active: qa
+  cloud:
+    config:
+      uri: 'http://daily-config-server:8888'
+      label: testing-phase1
+      fail-fast: true
+    application:
+      name: general
+    gateway:
+      filters:
+        - globalFilter
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+      routes:
+        - id: user-management-service
+          uri: http://daily-user-service:8080/
+          predicates:
+            - Path=/user-management-service/**
+          filters:
+            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: lookup-service
+          uri: http://daily-lookup-service:8080/
+          predicates:
+            - Path=/lookup-service/**
+          filters:
+            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: report-service
+          uri: http://daily-report-service:8080/
+          predicates:
+            - Path=/report-service/**
+          filters:
+            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: logging-service
+          uri: http://daily-logging-service:8080/
+          predicates:
+            - Path=/logging-service/**
+          filters:
+            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: config-service
+          uri: http://daily-config-server:8888/
+          predicates:
+              - Path=/config-service/**
+          filters:
+              - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: notification-service
+          uri: http://daily-notification-service:8080/
+          predicates:
+              - Path=/notification-service/**
+          filters:
+              - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE

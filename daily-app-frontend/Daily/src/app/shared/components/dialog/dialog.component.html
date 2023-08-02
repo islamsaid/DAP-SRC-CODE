@@ -1,0 +1,86 @@
+<p-dialog
+  [(visible)]="open"
+  [closable]="true"
+  [modal]="true"
+  class="shared-dialog"
+>
+  <ng-template pTemplate="header" class="flex justify-content-center">
+    <div>
+      <i class="{{ dialogConfig.icon }} mr-2"></i>
+      <span class="text">{{ dialogConfig.header }}</span>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="content">
+    <form
+    autocomplete="off" 
+      [formGroup]="dialogForm"
+      (ngSubmit)="onSubmit()"
+      class="row text dialog-enhance justify-content-center content-style"
+    >
+      <hr />
+      <div class="row flex flex-wrap pt-2">
+        <div *ngFor="let field of dialogConfig.inputs" class="col-6 col-style">
+          <br />
+
+          <span class="p-float-label" *ngIf="field.element == 'input'">
+            <input
+              id="float-input"
+              style="width: 25vw"
+              type="text"
+              formControlName="{{ field.fieldId }}"
+              pInputText
+              required="{{ field.required }}"
+              maxlength="50"
+            />
+            <label for="float-input"
+              >{{ field.label }}
+              <span *ngIf="field.required" class="required">*</span></label
+            >
+          </span>
+          <span class="p-float-label modal" *ngIf="field.element == 'dropdown'">
+            <p-dropdown
+              [options]="
+                dialogConfig.name == 'user-management' ? profileList : []
+              "
+              styleClass="tableDrop"
+              id="float-dropdown"
+              optionLabel="name"
+              [required]="field.required"
+              [optionValue]="dialogConfig.name == 'user-management' ? 'id' : ''"
+              formControlName="{{ field.fieldId }}"
+              appendTo="body"
+              [autoDisplayFirst]="false"
+            ></p-dropdown>
+            <label for="float-dropdown"
+              >{{ field.label + "  "
+              }}<span *ngIf="field.required" class="required">*</span></label
+            >
+          </span>
+        </div>
+      </div>
+      <div
+        class="row flex justify-content-end text-center"
+        *ngIf="!dialogConfig.view"
+      >
+        <div class="flex text-center">
+          <button
+            *ngFor="let button of dialogConfig.buttons"
+            pButton
+            class="mb-2 mr-2 text-center"
+            type="{{ button.type }}"
+            label="{{ button.label }}"
+            [ngClass]="
+              button.type == 'submit'
+                ? 'p-button-raised p-button-danger red-button'
+                : button.type == 'reset'
+                ? ' p-button-danger p-button-text white-button'
+                : ''
+            "
+            (click)="button.type == 'reset' ? cancel() : ''"
+            [disabled]="button.label == 'Create' && dialogForm.invalid"
+          ></button>
+        </div>
+      </div>
+    </form>
+  </ng-template>
+</p-dialog>

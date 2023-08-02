@@ -1,0 +1,28 @@
+<div class="row layout-margin">
+  <div class="row flex header">
+    <div class="col-7 flex pt-4">
+      <i class="icon-chart head-icon"></i>
+      <span class="text">SUBS Variances Chart</span>
+    </div>
+  </div>
+  <div class="row flex" *ngIf="viewBalnace || viewMaxMin">
+    <div class="col-6" *ngIf="viewBalnace">
+      <app-chart-bar></app-chart-bar>
+    </div>
+    <div class="col-6" *ngIf="viewMaxMin">
+      <app-rateplans-numbers></app-rateplans-numbers>
+    </div>
+  </div>
+  <div class="row flex">
+    <div class="col-6" *ngIf="viewNotification && viewpriceGroup">
+      <app-new-price-group [priceGroups]="priceGroups"></app-new-price-group>
+    </div>
+    <div class="col-6">
+      <app-new-services
+        *ngIf="viewNotification"
+        [serviceClasses]="serviceClasses"
+        [tarrifsModels]="tarrifsModels"
+      ></app-new-services>
+    </div>
+  </div>
+</div>

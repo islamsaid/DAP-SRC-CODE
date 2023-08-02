@@ -1,0 +1,9 @@
+<div *ngIf="inputs?.length">
+  <app-service-form [source]="'rateplans'" [inputs]="inputs">
+  </app-service-form>
+  <app-services-list
+    [source]="'rateplans'"
+    [inputs]="inputs"
+    [enableUpdate]="enableUpdate"
+  ></app-services-list>
+</div>

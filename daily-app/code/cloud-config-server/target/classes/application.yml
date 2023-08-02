@@ -1,0 +1,44 @@
+
+spring:
+  application:
+    name: cloud-config-manager
+  profiles:
+    active: jdbc
+  cloud:
+    config:
+      enabled: false
+      server:
+        jdbc:
+          sql: "SELECT CODE, VALUE from DAILY_SYSTEM_PROPERTIES where APPLICATION IN (?, 'general') and PROFILE=? and LABEL=?"
+          order: '1'
+        default-application-name: common
+        default-profile: dev
+        default-label: development-phase1
+  datasource:
+    url: 'jdbc:oracle:thin:@10.0.20.38:1521/orclpdb'
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    username: DAILY_APP
+    password: DAILY_APP
+    hikari:
+      connection-timeout: '30000'
+      maximum-pool-size: '10'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+  health:
+    livenessState:
+      enabled: true
+    readinessState:
+      enabled: true
+server:
+  port: '8888'
+  servlet:
+    init-param:
+      dirAllowed: false

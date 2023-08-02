@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <delete file="E:\working_area\Project\daily-app\daily-app\code\cloud-config-server\target\classes/application.test.properties" />
+  </target>
+</project>

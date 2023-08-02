@@ -1,0 +1,1180 @@
+[DEBUG] 2023-01-10 11:59:20.428 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 11:59:24.250 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-01-10 11:59:24.254 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 11:59:24.255 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 11:59:24.256 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 11:59:24.258 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 11:59:24.259 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 11:59:24.260 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 11:59:24.261 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 11:59:24.261 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 11:59:24.262 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 11:59:24.264 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 11:59:24.266 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 11:59:24.266 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 11:59:24.267 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 11:59:24.268 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 11:59:24.268 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 11:59:24.269 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 11:59:24.270 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 11:59:24.271 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 11:59:24.271 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 11:59:24.272 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 11:59:24.274 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 11:59:24.276 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 11:59:24.277 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 11:59:24.278 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 11:59:24.278 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 11:59:24.279 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 11:59:24.280 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-01-10 11:59:24.280 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 11:59:24.283 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 11:59:24.284 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 11:59:24.287 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 11:59:24.287 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 11:59:24.288 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 11:59:24.289 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-01-10 11:59:24.291 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 11:59:24.294 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-01-10 11:59:45.655 [main] [PoolBase.newConnection] {} - HikariPool-1 - Failed to create/setup connection: IO Error: The Network Adapter could not establish the connection
+[DEBUG] 2023-01-10 11:59:45.656 [main] [HikariPool.createPoolEntry] {} - HikariPool-1 - Cannot acquire connection from data source
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:854) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:793) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:57) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:108) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:78) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[?:?]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:80) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:186) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:233) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1282) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1243) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:494) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:349) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1172) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcCustomConversions(AbstractJdbcConfiguration.java:117) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:571) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 152 more
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21019 ms. /10.0.20.38 1521 30000 1 true
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:233) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 152 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:579) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:586) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853) ~[?:?]
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:285) ~[?:?]
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:99) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:77) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:192) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 152 more
+[ERROR] 2023-01-10 11:59:46.686 [main] [HikariPool.throwPoolInitializationException] {} - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:854) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:793) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:57) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:108) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:78) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[?:?]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:80) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:186) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:233) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1282) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1243) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:494) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:349) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1172) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcCustomConversions(AbstractJdbcConfiguration.java:117) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:571) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 152 more
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21019 ms. /10.0.20.38 1521 30000 1 true
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:233) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 152 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:579) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:586) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853) ~[?:?]
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:285) ~[?:?]
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:99) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:77) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:192) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 152 more
+[DEBUG] 2023-01-10 11:59:47.833 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 11:59:49.412 [main] [HikariConfig.logConfiguration] {} - HikariPool-2 - configuration:
+[DEBUG] 2023-01-10 11:59:49.414 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 11:59:49.415 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 11:59:49.416 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 11:59:49.416 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 11:59:49.416 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 11:59:49.417 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 11:59:49.417 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 11:59:49.417 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 11:59:49.417 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 11:59:49.417 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 11:59:49.418 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 11:59:49.418 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 11:59:49.418 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 11:59:49.418 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 11:59:49.419 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 11:59:49.419 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 11:59:49.419 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 11:59:49.419 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 11:59:49.420 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 11:59:49.420 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 11:59:49.420 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 11:59:49.420 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 11:59:49.421 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 11:59:49.421 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 11:59:49.421 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 11:59:49.421 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 11:59:49.421 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-2"
+[DEBUG] 2023-01-10 11:59:49.422 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 11:59:49.422 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 11:59:49.422 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 11:59:49.423 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 11:59:49.423 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 11:59:49.423 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 11:59:49.423 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-01-10 11:59:49.424 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 11:59:49.424 [main] [HikariDataSource.getConnection] {} - HikariPool-2 - Starting...
+[DEBUG] 2023-01-10 12:00:10.433 [main] [PoolBase.newConnection] {} - HikariPool-2 - Failed to create/setup connection: IO Error: The Network Adapter could not establish the connection
+[DEBUG] 2023-01-10 12:00:10.434 [main] [HikariPool.createPoolEntry] {} - HikariPool-2 - Cannot acquire connection from data source
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:854) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:793) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:57) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:108) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:78) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[?:?]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:80) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:186) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:233) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1282) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1243) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:494) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:349) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1172) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcCustomConversions(AbstractJdbcConfiguration.java:117) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:53) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:46) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:571) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 151 more
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21006 ms. /10.0.20.38 1521 30000 1 true
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:233) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 151 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:579) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:586) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853) ~[?:?]
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:285) ~[?:?]
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:99) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:77) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:192) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 151 more
+[ERROR] 2023-01-10 12:00:11.437 [main] [HikariPool.throwPoolInitializationException] {} - HikariPool-2 - Exception during pool initialization.
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:854) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:793) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:57) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:108) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:78) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[?:?]
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:80) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:186) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:233) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1282) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1243) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:494) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:349) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1172) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcCustomConversions(AbstractJdbcConfiguration.java:117) ~[spring-data-jdbc-2.4.0.jar:2.4.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:53) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:46) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:571) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 151 more
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21006 ms. /10.0.20.38 1521 30000 1 true
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:233) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 151 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:579) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:586) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853) ~[?:?]
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:285) ~[?:?]
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:99) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:77) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:192) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588) ~[ojdbc8-19.3.0.0.jar:19.3.0.0.0]
+	... 151 more
+[DEBUG] 2023-01-10 12:01:36.282 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 12:01:41.198 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-01-10 12:01:41.201 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 12:01:41.202 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 12:01:41.203 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 12:01:41.203 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 12:01:41.204 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 12:01:41.207 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 12:01:41.209 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 12:01:41.209 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 12:01:41.210 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 12:01:41.211 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 12:01:41.212 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 12:01:41.213 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 12:01:41.214 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 12:01:41.215 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 12:01:41.216 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 12:01:41.217 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 12:01:41.218 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 12:01:41.219 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 12:01:41.219 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 12:01:41.220 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 12:01:41.221 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 12:01:41.221 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 12:01:41.222 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 12:01:41.222 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 12:01:41.223 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 12:01:41.223 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 12:01:41.224 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-01-10 12:01:41.225 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 12:01:41.226 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 12:01:41.226 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 12:01:41.227 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 12:01:41.227 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 12:01:41.228 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 12:01:41.228 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-01-10 12:01:41.228 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 12:01:41.229 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-01-10 12:01:42.266 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@280484c7
+[INFO ] 2023-01-10 12:01:42.268 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-01-10 12:01:42.369 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-01-10 12:01:42.785 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b51490b
+[DEBUG] 2023-01-10 12:01:43.484 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7af48d4b
+[DEBUG] 2023-01-10 12:01:44.236 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@29e1adf
+[DEBUG] 2023-01-10 12:01:44.603 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7403f2a9
+[DEBUG] 2023-01-10 12:01:44.964 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@199a159d
+[DEBUG] 2023-01-10 12:01:45.337 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4570db47
+[INFO ] 2023-01-10 12:01:45.649 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown initiated...
+[DEBUG] 2023-01-10 12:01:45.649 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - Before shutdown stats (total=7, active=0, idle=7, waiting=0)
+[DEBUG] 2023-01-10 12:01:45.653 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@280484c7: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.690 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@b51490b: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.721 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7af48d4b: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.741 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6257b93a
+[DEBUG] 2023-01-10 12:01:45.754 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@29e1adf: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.787 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7403f2a9: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.821 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@199a159d: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.867 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4570db47: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.899 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6257b93a: (connection evicted)
+[DEBUG] 2023-01-10 12:01:45.936 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[INFO ] 2023-01-10 12:01:45.937 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown completed.
+[DEBUG] 2023-01-10 14:10:44.393 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 14:10:48.298 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-01-10 14:10:48.304 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 14:10:48.305 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 14:10:48.306 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 14:10:48.306 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 14:10:48.307 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 14:10:48.309 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 14:10:48.309 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 14:10:48.310 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 14:10:48.310 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 14:10:48.311 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 14:10:48.312 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 14:10:48.320 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 14:10:48.320 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 14:10:48.321 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 14:10:48.321 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 14:10:48.322 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 14:10:48.323 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 14:10:48.323 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 14:10:48.324 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 14:10:48.325 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 14:10:48.325 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 14:10:48.326 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 14:10:48.326 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 14:10:48.327 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 14:10:48.327 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 14:10:48.328 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 14:10:48.329 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-01-10 14:10:48.330 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 14:10:48.330 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 14:10:48.331 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 14:10:48.332 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 14:10:48.332 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 14:10:48.333 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 14:10:48.333 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-01-10 14:10:48.334 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 14:10:48.334 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-01-10 14:10:49.140 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@429e7914
+[INFO ] 2023-01-10 14:10:49.142 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-01-10 14:10:49.243 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-01-10 14:10:49.633 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@52f5953d
+[DEBUG] 2023-01-10 14:10:50.032 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5c33818c
+[DEBUG] 2023-01-10 14:10:50.467 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2400eb60
+[DEBUG] 2023-01-10 14:10:50.890 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3318b058
+[DEBUG] 2023-01-10 14:10:51.424 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3f04a59e
+[INFO ] 2023-01-10 14:10:51.679 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown initiated...
+[DEBUG] 2023-01-10 14:10:51.680 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - Before shutdown stats (total=6, active=0, idle=6, waiting=0)
+[DEBUG] 2023-01-10 14:10:51.686 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@429e7914: (connection evicted)
+[DEBUG] 2023-01-10 14:10:51.766 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@52f5953d: (connection evicted)
+[DEBUG] 2023-01-10 14:10:51.804 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5c33818c: (connection evicted)
+[DEBUG] 2023-01-10 14:10:51.868 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2400eb60: (connection evicted)
+[DEBUG] 2023-01-10 14:10:51.914 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3318b058: (connection evicted)
+[DEBUG] 2023-01-10 14:10:51.932 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1458bc2
+[DEBUG] 2023-01-10 14:10:51.954 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3f04a59e: (connection evicted)
+[DEBUG] 2023-01-10 14:10:52.074 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1458bc2: (connection evicted)
+[DEBUG] 2023-01-10 14:10:52.112 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[INFO ] 2023-01-10 14:10:52.113 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown completed.
+[DEBUG] 2023-01-10 14:16:03.982 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 14:16:08.027 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-01-10 14:16:08.030 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 14:16:08.030 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 14:16:08.031 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 14:16:08.032 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 14:16:08.032 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 14:16:08.033 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 14:16:08.034 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 14:16:08.034 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 14:16:08.035 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 14:16:08.036 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 14:16:08.036 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 14:16:08.036 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 14:16:08.036 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 14:16:08.037 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 14:16:08.037 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 14:16:08.037 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 14:16:08.038 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 14:16:08.038 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 14:16:08.038 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 14:16:08.040 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 14:16:08.042 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 14:16:08.043 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 14:16:08.044 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 14:16:08.044 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 14:16:08.044 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 14:16:08.044 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 14:16:08.045 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-01-10 14:16:08.045 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 14:16:08.046 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 14:16:08.046 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 14:16:08.047 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 14:16:08.047 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 14:16:08.048 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 14:16:08.048 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-01-10 14:16:08.048 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 14:16:08.048 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-01-10 14:16:09.613 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@59127611
+[INFO ] 2023-01-10 14:16:09.615 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-01-10 14:16:09.716 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-01-10 14:16:10.161 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3b7bbc0e
+[DEBUG] 2023-01-10 14:16:10.559 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2d0bbfa8
+[DEBUG] 2023-01-10 14:16:10.949 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@55d1baeb
+[DEBUG] 2023-01-10 14:16:11.388 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6aef5360
+[DEBUG] 2023-01-10 14:16:11.777 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4ed5159b
+[DEBUG] 2023-01-10 14:16:12.186 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@ec39355
+[INFO ] 2023-01-10 14:16:12.388 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown initiated...
+[DEBUG] 2023-01-10 14:16:12.389 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - Before shutdown stats (total=7, active=0, idle=7, waiting=0)
+[DEBUG] 2023-01-10 14:16:12.392 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@59127611: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.437 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3b7bbc0e: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.473 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2d0bbfa8: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.506 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@55d1baeb: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.542 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6aef5360: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.575 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4ed5159b: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.602 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@21845490
+[DEBUG] 2023-01-10 14:16:12.609 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@ec39355: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.655 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@21845490: (connection evicted)
+[DEBUG] 2023-01-10 14:16:12.688 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[INFO ] 2023-01-10 14:16:12.688 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown completed.
+[DEBUG] 2023-01-10 15:37:10.290 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 15:37:12.778 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-01-10 15:37:12.782 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 15:37:12.782 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 15:37:12.782 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 15:37:12.783 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 15:37:12.783 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 15:37:12.783 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 15:37:12.784 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 15:37:12.784 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 15:37:12.784 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 15:37:12.785 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 15:37:12.785 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 15:37:12.786 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 15:37:12.786 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 15:37:12.786 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 15:37:12.786 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 15:37:12.787 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 15:37:12.787 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 15:37:12.787 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 15:37:12.787 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 15:37:12.787 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 15:37:12.788 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 15:37:12.788 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 15:37:12.788 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 15:37:12.788 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 15:37:12.789 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 15:37:12.789 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 15:37:12.789 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-01-10 15:37:12.789 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 15:37:12.790 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 15:37:12.790 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 15:37:12.790 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 15:37:12.790 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 15:37:12.790 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 15:37:12.791 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP_TST"
+[DEBUG] 2023-01-10 15:37:12.791 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 15:37:12.791 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-01-10 15:37:13.495 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1216eb3f
+[INFO ] 2023-01-10 15:37:13.501 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-01-10 15:37:13.610 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-01-10 15:37:13.978 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@71f06c45
+[DEBUG] 2023-01-10 15:37:14.361 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@73d72ca1
+[DEBUG] 2023-01-10 15:37:14.754 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b47e0b1
+[DEBUG] 2023-01-10 15:37:15.152 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1a9a15a8
+[INFO ] 2023-01-10 15:37:15.264 [main] [HikariDataSource.close] {} - HikariPool-1 - Shutdown initiated...
+[DEBUG] 2023-01-10 15:37:15.264 [main] [HikariPool.logPoolState] {} - HikariPool-1 - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+[DEBUG] 2023-01-10 15:37:15.265 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1216eb3f: (connection evicted)
+[DEBUG] 2023-01-10 15:37:15.302 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@71f06c45: (connection evicted)
+[DEBUG] 2023-01-10 15:37:15.336 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@73d72ca1: (connection evicted)
+[DEBUG] 2023-01-10 15:37:15.374 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@b47e0b1: (connection evicted)
+[DEBUG] 2023-01-10 15:37:15.412 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1a9a15a8: (connection evicted)
+[DEBUG] 2023-01-10 15:37:15.535 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@10430d4a
+[DEBUG] 2023-01-10 15:37:15.538 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@10430d4a: (connection evicted)
+[DEBUG] 2023-01-10 15:37:15.578 [main] [HikariPool.logPoolState] {} - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[INFO ] 2023-01-10 15:37:15.579 [main] [HikariDataSource.close] {} - HikariPool-1 - Shutdown completed.
+[DEBUG] 2023-01-10 15:37:38.425 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 15:37:40.791 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-01-10 15:37:40.793 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 15:37:40.794 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 15:37:40.794 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 15:37:40.794 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 15:37:40.794 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 15:37:40.795 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 15:37:40.796 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 15:37:40.796 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 15:37:40.796 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 15:37:40.797 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 15:37:40.797 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 15:37:40.797 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 15:37:40.797 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 15:37:40.798 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 15:37:40.798 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 15:37:40.798 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 15:37:40.798 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 15:37:40.799 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 15:37:40.799 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 15:37:40.799 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 15:37:40.799 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 15:37:40.799 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 15:37:40.800 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 15:37:40.800 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 15:37:40.800 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 15:37:40.800 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 15:37:40.800 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-01-10 15:37:40.801 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 15:37:40.801 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 15:37:40.801 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 15:37:40.802 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 15:37:40.802 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 15:37:40.802 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 15:37:40.802 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP_TST"
+[DEBUG] 2023-01-10 15:37:40.802 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 15:37:40.803 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-01-10 15:37:41.503 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3ffd4b12
+[INFO ] 2023-01-10 15:37:41.510 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-01-10 15:37:41.609 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-01-10 15:37:42.008 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@79fec247
+[DEBUG] 2023-01-10 15:37:42.396 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6d24216
+[DEBUG] 2023-01-10 15:37:42.791 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7e4a80ae
+[DEBUG] 2023-01-10 15:37:43.173 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4cba1cca
+[INFO ] 2023-01-10 15:37:43.281 [main] [HikariDataSource.close] {} - HikariPool-1 - Shutdown initiated...
+[DEBUG] 2023-01-10 15:37:43.282 [main] [HikariPool.logPoolState] {} - HikariPool-1 - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+[DEBUG] 2023-01-10 15:37:43.285 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@3ffd4b12: (connection evicted)
+[DEBUG] 2023-01-10 15:37:43.318 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@79fec247: (connection evicted)
+[DEBUG] 2023-01-10 15:37:43.352 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6d24216: (connection evicted)
+[DEBUG] 2023-01-10 15:37:43.396 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7e4a80ae: (connection evicted)
+[DEBUG] 2023-01-10 15:37:43.435 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4cba1cca: (connection evicted)
+[DEBUG] 2023-01-10 15:37:43.537 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@654e6d5b
+[DEBUG] 2023-01-10 15:37:43.539 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@654e6d5b: (connection evicted)
+[DEBUG] 2023-01-10 15:37:43.576 [main] [HikariPool.logPoolState] {} - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[INFO ] 2023-01-10 15:37:43.577 [main] [HikariDataSource.close] {} - HikariPool-1 - Shutdown completed.
+[DEBUG] 2023-01-10 15:38:29.183 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-01-10 15:38:33.262 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-01-10 15:38:33.266 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-01-10 15:38:33.267 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-01-10 15:38:33.267 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-01-10 15:38:33.268 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-01-10 15:38:33.268 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-01-10 15:38:33.269 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-01-10 15:38:33.269 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-01-10 15:38:33.270 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-01-10 15:38:33.270 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-01-10 15:38:33.271 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-01-10 15:38:33.271 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-01-10 15:38:33.272 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-01-10 15:38:33.272 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-01-10 15:38:33.272 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-01-10 15:38:33.272 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-01-10 15:38:33.273 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-01-10 15:38:33.273 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-01-10 15:38:33.273 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-01-10 15:38:33.274 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-01-10 15:38:33.274 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-01-10 15:38:33.274 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-01-10 15:38:33.274 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-01-10 15:38:33.275 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-01-10 15:38:33.275 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-01-10 15:38:33.275 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-01-10 15:38:33.275 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-01-10 15:38:33.275 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-01-10 15:38:33.276 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-01-10 15:38:33.277 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-01-10 15:38:33.278 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-01-10 15:38:33.278 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-01-10 15:38:33.279 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-01-10 15:38:33.279 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-01-10 15:38:33.281 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-01-10 15:38:33.282 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-01-10 15:38:33.283 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-01-10 15:38:35.150 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@59127611
+[INFO ] 2023-01-10 15:38:35.151 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-01-10 15:38:35.252 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-01-10 15:38:36.549 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2f679a5e
+[DEBUG] 2023-01-10 15:38:37.236 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4cd81d14
+[DEBUG] 2023-01-10 15:38:37.647 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@34160875
+[INFO ] 2023-01-10 15:38:37.844 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown initiated...
+[DEBUG] 2023-01-10 15:38:37.845 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - Before shutdown stats (total=4, active=0, idle=4, waiting=0)
+[DEBUG] 2023-01-10 15:38:37.849 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@59127611: (connection evicted)
+[DEBUG] 2023-01-10 15:38:37.889 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2f679a5e: (connection evicted)
+[DEBUG] 2023-01-10 15:38:37.923 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4cd81d14: (connection evicted)
+[DEBUG] 2023-01-10 15:38:37.959 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@34160875: (connection evicted)
+[DEBUG] 2023-01-10 15:38:38.026 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@249f34d
+[DEBUG] 2023-01-10 15:38:38.027 [HikariPool-1 connection closer] [PoolBase.quietlyCloseConnection] {} - HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@249f34d: (connection evicted)
+[DEBUG] 2023-01-10 15:38:38.063 [SpringApplicationShutdownHook] [HikariPool.logPoolState] {} - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[INFO ] 2023-01-10 15:38:38.064 [SpringApplicationShutdownHook] [HikariDataSource.close] {} - HikariPool-1 - Shutdown completed.

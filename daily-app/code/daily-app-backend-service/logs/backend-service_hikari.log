@@ -1,0 +1,630 @@
+[DEBUG] 2023-06-01 15:02:18.478 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:02:21.085 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:02:21.089 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:02:21.090 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:02:21.091 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:02:21.093 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:02:21.094 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:02:21.095 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:02:21.095 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:02:21.096 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:02:21.096 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:02:21.097 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:02:21.098 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:02:21.098 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:02:21.098 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:02:21.099 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:02:21.099 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:02:21.099 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:02:21.100 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:02:21.100 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:02:21.101 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:02:21.101 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:02:21.101 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:02:21.102 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:02:21.102 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:02:21.102 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:02:21.102 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:02:21.103 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:02:21.103 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:02:21.104 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:02:21.104 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:02:21.104 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:02:21.105 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:02:21.105 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:02:21.105 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:02:21.106 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP_TST"
+[DEBUG] 2023-06-01 15:02:21.106 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:02:21.106 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:02:21.943 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@54a056e4
+[INFO ] 2023-06-01 15:02:21.947 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:02:22.047 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:02:22.390 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@190a4737
+[DEBUG] 2023-06-01 15:02:22.757 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@225d0dff
+[DEBUG] 2023-06-01 15:02:23.124 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5a25cb26
+[DEBUG] 2023-06-01 15:02:23.488 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7260724a
+[DEBUG] 2023-06-01 15:02:23.808 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4121c637
+[DEBUG] 2023-06-01 15:02:24.160 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4dd52918
+[DEBUG] 2023-06-01 15:02:24.466 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7de664cc
+[DEBUG] 2023-06-01 15:02:24.782 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6810cf84
+[DEBUG] 2023-06-01 15:02:25.114 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@33623ffd
+[DEBUG] 2023-06-01 15:02:25.115 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:02:52.049 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:02:52.049 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:03:22.050 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:03:22.050 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:04:15.129 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:04:17.581 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:04:17.585 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:04:17.586 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:04:17.587 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:04:17.587 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:04:17.587 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:04:17.588 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:04:17.589 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:04:17.589 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:04:17.590 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:04:17.591 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:04:17.592 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:04:17.592 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:04:17.593 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:04:17.593 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:04:17.594 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:04:17.594 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:04:17.595 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:04:17.595 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:04:17.596 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:04:17.596 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:04:17.597 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:04:17.597 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:04:17.597 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:04:17.598 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:04:17.598 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:04:17.598 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:04:17.599 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:04:17.599 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:04:17.600 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:04:17.600 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:04:17.601 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:04:17.601 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:04:17.602 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:04:17.602 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP_TST"
+[DEBUG] 2023-06-01 15:04:17.603 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:04:17.603 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:04:19.319 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@51eb0e84
+[INFO ] 2023-06-01 15:04:19.322 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:04:19.422 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:04:20.552 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@41fbf435
+[DEBUG] 2023-06-01 15:04:21.491 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2f48dca7
+[DEBUG] 2023-06-01 15:04:22.114 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5768a32c
+[DEBUG] 2023-06-01 15:04:22.621 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@92d441f
+[DEBUG] 2023-06-01 15:04:23.002 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4c6ceec4
+[DEBUG] 2023-06-01 15:04:23.354 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7c9b036
+[DEBUG] 2023-06-01 15:04:23.851 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@86cd7c3
+[DEBUG] 2023-06-01 15:04:24.240 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@55563a89
+[DEBUG] 2023-06-01 15:04:24.628 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@135befd4
+[DEBUG] 2023-06-01 15:04:24.628 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:04:49.423 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:04:49.423 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:05:19.425 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:05:19.425 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:05:49.428 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:05:49.428 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:06:19.429 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:06:19.429 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:06:49.431 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:06:49.431 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:07:19.432 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:07:19.432 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:07:49.435 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:07:49.435 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:08:19.438 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:08:19.438 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:08:49.440 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:08:49.440 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:09:19.442 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:09:19.443 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:09:49.445 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:09:49.445 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:10:19.447 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:10:19.447 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:10:49.448 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:10:49.448 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:11:19.457 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:11:19.458 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:11:49.459 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:11:49.459 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:12:19.461 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:12:19.462 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:19:06.132 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:19:09.581 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:19:09.587 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:19:09.588 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:19:09.589 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:19:09.589 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:19:09.590 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:19:09.591 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:19:09.592 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:19:09.593 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:19:09.594 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:19:09.596 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:19:09.596 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:19:09.597 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:19:09.597 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:19:09.598 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:19:09.598 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:19:09.599 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:19:09.600 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:19:09.600 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:19:09.600 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:19:09.601 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:19:09.601 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:19:09.602 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:19:09.602 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:19:09.602 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:19:09.603 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:19:09.603 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:19:09.604 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:19:09.604 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:19:09.605 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:19:09.606 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:19:09.606 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:19:09.607 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:19:09.608 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:19:09.608 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:19:09.610 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:19:09.610 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:19:10.628 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@12cd129c
+[INFO ] 2023-06-01 15:19:10.632 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:19:10.731 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:19:11.170 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@526134d1
+[DEBUG] 2023-06-01 15:19:11.567 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@79996acd
+[DEBUG] 2023-06-01 15:19:11.977 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@12a0404
+[DEBUG] 2023-06-01 15:19:12.394 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@418e1204
+[DEBUG] 2023-06-01 15:19:12.805 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1a2eca7e
+[DEBUG] 2023-06-01 15:19:13.213 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@46927ca6
+[DEBUG] 2023-06-01 15:19:13.614 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4e7b5620
+[DEBUG] 2023-06-01 15:19:14.090 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@74bbd844
+[DEBUG] 2023-06-01 15:19:14.485 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@70e64240
+[DEBUG] 2023-06-01 15:19:14.486 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:19:40.733 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:19:40.734 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:20:10.735 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:20:10.735 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:20:40.736 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:20:40.737 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:21:10.737 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:21:10.737 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:21:40.738 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:21:40.738 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:22:10.740 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:22:10.740 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:22:40.741 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:22:40.742 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:23:10.744 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:23:10.744 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:23:40.745 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:23:40.745 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:24:10.747 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:24:10.748 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:24:40.750 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:24:40.751 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:26:46.172 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:26:51.354 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:26:51.360 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:26:51.361 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:26:51.362 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:26:51.362 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:26:51.363 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:26:51.365 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:26:51.366 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:26:51.366 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:26:51.367 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:26:51.368 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:26:51.369 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:26:51.369 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:26:51.370 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:26:51.370 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:26:51.371 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:26:51.372 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:26:51.373 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:26:51.374 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:26:51.375 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:26:51.375 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:26:51.376 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:26:51.377 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:26:51.377 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:26:51.378 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:26:51.378 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:26:51.379 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:26:51.379 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:26:51.380 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:26:51.381 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:26:51.382 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:26:51.383 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:26:51.384 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:26:51.385 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:26:51.386 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:26:51.387 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:26:51.387 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:26:52.513 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@56b9d43f
+[INFO ] 2023-06-01 15:26:52.519 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:26:52.623 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:26:53.014 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@928e52d
+[DEBUG] 2023-06-01 15:26:53.376 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3758dfaf
+[DEBUG] 2023-06-01 15:26:53.728 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4f302bf6
+[DEBUG] 2023-06-01 15:26:54.112 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@59ee1756
+[DEBUG] 2023-06-01 15:26:54.452 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@543426d5
+[DEBUG] 2023-06-01 15:26:54.801 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@509aaad
+[DEBUG] 2023-06-01 15:26:55.158 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@44502b18
+[DEBUG] 2023-06-01 15:26:55.505 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@e784f9f
+[DEBUG] 2023-06-01 15:26:55.848 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@66b89944
+[DEBUG] 2023-06-01 15:26:55.849 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:27:22.625 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:27:22.625 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:35:04.127 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:35:07.074 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:35:07.081 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:35:07.082 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:35:07.083 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:35:07.083 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:35:07.084 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:35:07.085 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:35:07.086 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:35:07.087 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:35:07.087 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:35:07.089 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:35:07.090 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:35:07.090 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:35:07.091 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:35:07.092 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:35:07.092 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:35:07.093 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:35:07.093 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:35:07.094 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:35:07.095 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:35:07.095 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:35:07.096 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:35:07.097 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:35:07.097 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:35:07.097 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:35:07.098 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:35:07.098 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:35:07.099 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:35:07.100 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:35:07.100 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:35:07.101 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:35:07.101 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:35:07.102 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:35:07.103 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:35:07.103 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:35:07.104 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:35:07.104 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:35:08.150 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@50ff7063
+[INFO ] 2023-06-01 15:35:08.155 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:35:08.286 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:35:08.738 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2a603061
+[DEBUG] 2023-06-01 15:35:09.075 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@71b4b646
+[DEBUG] 2023-06-01 15:35:09.394 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@97fa18a
+[DEBUG] 2023-06-01 15:35:09.728 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5f2054bb
+[DEBUG] 2023-06-01 15:35:10.059 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@127b0fe9
+[DEBUG] 2023-06-01 15:35:10.387 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5264320e
+[DEBUG] 2023-06-01 15:35:10.712 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1adefe5a
+[DEBUG] 2023-06-01 15:35:11.059 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@52a74dd8
+[DEBUG] 2023-06-01 15:35:11.394 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1d761574
+[DEBUG] 2023-06-01 15:35:11.395 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:35:38.288 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:35:38.288 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:36:08.289 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:36:08.289 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:36:38.291 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:36:38.291 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:37:08.292 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:37:08.292 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:37:38.294 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:37:38.294 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:38:08.296 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:38:08.297 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:39:48.006 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:39:50.418 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:39:50.421 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:39:50.422 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:39:50.423 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:39:50.423 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:39:50.423 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:39:50.424 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:39:50.425 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:39:50.426 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:39:50.426 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:39:50.427 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:39:50.428 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:39:50.429 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:39:50.430 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:39:50.430 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:39:50.431 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:39:50.431 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:39:50.432 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:39:50.433 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:39:50.434 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:39:50.434 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:39:50.435 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:39:50.435 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:39:50.436 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:39:50.436 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:39:50.436 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:39:50.437 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:39:50.437 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:39:50.437 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:39:50.438 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:39:50.438 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:39:50.439 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:39:50.439 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:39:50.439 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:39:50.440 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:39:50.440 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:39:50.440 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:39:51.261 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1f45db49
+[INFO ] 2023-06-01 15:39:51.264 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:39:51.365 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:39:51.710 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7d8dcbe9
+[DEBUG] 2023-06-01 15:39:52.043 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1e07781f
+[DEBUG] 2023-06-01 15:39:52.389 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@669bddcd
+[DEBUG] 2023-06-01 15:39:52.921 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@79fd6291
+[DEBUG] 2023-06-01 15:39:53.386 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7d9f345b
+[DEBUG] 2023-06-01 15:39:53.910 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4aaa8ec2
+[DEBUG] 2023-06-01 15:39:54.437 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1c77c714
+[DEBUG] 2023-06-01 15:39:54.890 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3e0ed95c
+[DEBUG] 2023-06-01 15:39:55.359 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@69a4d153
+[DEBUG] 2023-06-01 15:39:55.360 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:40:21.367 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:40:21.367 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:42:33.335 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:42:36.040 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:42:36.045 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:42:36.045 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:42:36.046 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:42:36.046 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:42:36.047 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:42:36.048 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:42:36.049 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:42:36.049 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:42:36.050 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:42:36.052 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:42:36.052 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:42:36.053 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:42:36.054 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:42:36.054 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:42:36.055 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:42:36.055 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:42:36.056 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:42:36.056 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:42:36.057 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:42:36.058 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:42:36.058 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:42:36.059 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:42:36.059 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:42:36.060 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:42:36.060 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:42:36.061 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:42:36.061 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:42:36.062 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:42:36.063 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:42:36.063 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:42:36.064 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:42:36.064 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:42:36.065 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:42:36.065 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:42:36.068 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:42:36.068 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:42:36.992 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1f45db49
+[INFO ] 2023-06-01 15:42:36.995 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:42:37.109 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:42:37.461 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3940b126
+[DEBUG] 2023-06-01 15:42:38.435 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@75ba17cd
+[DEBUG] 2023-06-01 15:42:38.767 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@de2b3a0
+[DEBUG] 2023-06-01 15:42:39.103 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3d733cea
+[DEBUG] 2023-06-01 15:42:39.437 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@16e69ef3
+[DEBUG] 2023-06-01 15:42:39.759 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@382cd3ac
+[DEBUG] 2023-06-01 15:42:40.096 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1e030f39
+[DEBUG] 2023-06-01 15:42:40.657 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@13e29e7
+[DEBUG] 2023-06-01 15:42:41.014 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5992bf53
+[DEBUG] 2023-06-01 15:42:41.014 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:43:07.112 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:43:07.113 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:43:37.114 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:43:37.114 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:44:07.117 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:44:07.118 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:45:49.623 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:45:52.631 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:45:52.636 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:45:52.636 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:45:52.637 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:45:52.637 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:45:52.638 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:45:52.639 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:45:52.640 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:45:52.640 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:45:52.641 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:45:52.642 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:45:52.642 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:45:52.643 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:45:52.643 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:45:52.644 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:45:52.644 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:45:52.645 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:45:52.645 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:45:52.646 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:45:52.647 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:45:52.647 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:45:52.648 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:45:52.648 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:45:52.649 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:45:52.650 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:45:52.651 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:45:52.651 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:45:52.652 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:45:52.653 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:45:52.653 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:45:52.654 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:45:52.654 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:45:52.655 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:45:52.655 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:45:52.656 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:45:52.656 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:45:52.657 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:45:53.586 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5e24592e
+[INFO ] 2023-06-01 15:45:53.590 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:45:53.691 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:45:54.060 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@307f7bde
+[DEBUG] 2023-06-01 15:45:54.384 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b130eee
+[DEBUG] 2023-06-01 15:45:54.715 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@73c2046e
+[DEBUG] 2023-06-01 15:45:55.055 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@29a8617
+[DEBUG] 2023-06-01 15:45:55.393 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@68c6a812
+[DEBUG] 2023-06-01 15:45:55.737 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@435fe5f3
+[DEBUG] 2023-06-01 15:45:56.060 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3409c554
+[DEBUG] 2023-06-01 15:45:56.388 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7ce954bd
+[DEBUG] 2023-06-01 15:45:56.714 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@430bdb57
+[DEBUG] 2023-06-01 15:45:56.714 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:46:23.693 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:46:23.694 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:46:53.695 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:46:53.696 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:47:43.585 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:47:45.800 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:47:45.805 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:47:45.806 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:47:45.807 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:47:45.807 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:47:45.808 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:47:45.810 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:47:45.811 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:47:45.812 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:47:45.812 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:47:45.814 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:47:45.814 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:47:45.815 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:47:45.816 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:47:45.816 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:47:45.816 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:47:45.817 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:47:45.818 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:47:45.818 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:47:45.819 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:47:45.820 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:47:45.820 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:47:45.821 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:47:45.822 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:47:45.822 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:47:45.823 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:47:45.824 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:47:45.824 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:47:45.825 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:47:45.826 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:47:45.826 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:47:45.827 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:47:45.828 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:47:45.828 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:47:45.831 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:47:45.832 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:47:45.832 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:47:46.679 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b94703b
+[INFO ] 2023-06-01 15:47:46.680 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:47:46.781 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:47:47.097 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@618cb5a9
+[DEBUG] 2023-06-01 15:47:47.425 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@15fe1772
+[DEBUG] 2023-06-01 15:47:47.759 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6dfe2fdf
+[DEBUG] 2023-06-01 15:47:48.085 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@25be8a3b
+[DEBUG] 2023-06-01 15:47:48.401 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@76fa4250
+[DEBUG] 2023-06-01 15:47:48.719 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@15eed909
+[DEBUG] 2023-06-01 15:47:49.031 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6bde66f8
+[DEBUG] 2023-06-01 15:47:49.345 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1288e028
+[DEBUG] 2023-06-01 15:47:49.660 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@518accf5
+[DEBUG] 2023-06-01 15:47:49.661 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:48:16.783 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:48:16.783 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:48:46.784 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:48:46.784 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:49:16.785 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:49:16.786 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:49:46.787 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:49:46.787 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:50:16.789 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:50:16.789 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:50:46.792 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:50:46.792 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:51:16.793 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:51:16.794 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:51:46.795 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:51:46.795 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:52:16.798 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:52:16.798 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:52:46.799 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:52:46.799 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:53:16.801 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:53:16.801 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:53:46.803 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:53:46.803 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:54:16.804 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:54:16.804 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:54:46.805 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:54:46.805 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:55:16.807 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:55:16.807 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:57:54.977 [main] [HikariConfig.attemptFromContextLoader] {} - Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44
+[DEBUG] 2023-06-01 15:57:57.564 [main] [HikariConfig.logConfiguration] {} - HikariPool-1 - configuration:
+[DEBUG] 2023-06-01 15:57:57.569 [main] [HikariConfig.logConfiguration] {} - allowPoolSuspension................................false
+[DEBUG] 2023-06-01 15:57:57.570 [main] [HikariConfig.logConfiguration] {} - autoCommit................................true
+[DEBUG] 2023-06-01 15:57:57.571 [main] [HikariConfig.logConfiguration] {} - catalog................................none
+[DEBUG] 2023-06-01 15:57:57.571 [main] [HikariConfig.logConfiguration] {} - connectionInitSql................................none
+[DEBUG] 2023-06-01 15:57:57.572 [main] [HikariConfig.logConfiguration] {} - connectionTestQuery................................none
+[DEBUG] 2023-06-01 15:57:57.573 [main] [HikariConfig.logConfiguration] {} - connectionTimeout................................30000
+[DEBUG] 2023-06-01 15:57:57.573 [main] [HikariConfig.logConfiguration] {} - dataSource................................none
+[DEBUG] 2023-06-01 15:57:57.574 [main] [HikariConfig.logConfiguration] {} - dataSourceClassName................................none
+[DEBUG] 2023-06-01 15:57:57.574 [main] [HikariConfig.logConfiguration] {} - dataSourceJNDI................................none
+[DEBUG] 2023-06-01 15:57:57.576 [main] [HikariConfig.logConfiguration] {} - dataSourceProperties................................{password=<masked>}
+[DEBUG] 2023-06-01 15:57:57.577 [main] [HikariConfig.logConfiguration] {} - driverClassName................................"oracle.jdbc.OracleDriver"
+[DEBUG] 2023-06-01 15:57:57.578 [main] [HikariConfig.logConfiguration] {} - exceptionOverrideClassName................................none
+[DEBUG] 2023-06-01 15:57:57.578 [main] [HikariConfig.logConfiguration] {} - healthCheckProperties................................{}
+[DEBUG] 2023-06-01 15:57:57.579 [main] [HikariConfig.logConfiguration] {} - healthCheckRegistry................................none
+[DEBUG] 2023-06-01 15:57:57.579 [main] [HikariConfig.logConfiguration] {} - idleTimeout................................600000
+[DEBUG] 2023-06-01 15:57:57.580 [main] [HikariConfig.logConfiguration] {} - initializationFailTimeout................................1
+[DEBUG] 2023-06-01 15:57:57.580 [main] [HikariConfig.logConfiguration] {} - isolateInternalQueries................................false
+[DEBUG] 2023-06-01 15:57:57.581 [main] [HikariConfig.logConfiguration] {} - jdbcUrl................................jdbc:oracle:thin:@10.0.20.38:1521/orclpdb
+[DEBUG] 2023-06-01 15:57:57.582 [main] [HikariConfig.logConfiguration] {} - keepaliveTime................................0
+[DEBUG] 2023-06-01 15:57:57.582 [main] [HikariConfig.logConfiguration] {} - leakDetectionThreshold................................0
+[DEBUG] 2023-06-01 15:57:57.583 [main] [HikariConfig.logConfiguration] {} - maxLifetime................................1800000
+[DEBUG] 2023-06-01 15:57:57.583 [main] [HikariConfig.logConfiguration] {} - maximumPoolSize................................10
+[DEBUG] 2023-06-01 15:57:57.584 [main] [HikariConfig.logConfiguration] {} - metricRegistry................................none
+[DEBUG] 2023-06-01 15:57:57.585 [main] [HikariConfig.logConfiguration] {} - metricsTrackerFactory................................none
+[DEBUG] 2023-06-01 15:57:57.585 [main] [HikariConfig.logConfiguration] {} - minimumIdle................................10
+[DEBUG] 2023-06-01 15:57:57.586 [main] [HikariConfig.logConfiguration] {} - password................................<masked>
+[DEBUG] 2023-06-01 15:57:57.587 [main] [HikariConfig.logConfiguration] {} - poolName................................"HikariPool-1"
+[DEBUG] 2023-06-01 15:57:57.587 [main] [HikariConfig.logConfiguration] {} - readOnly................................false
+[DEBUG] 2023-06-01 15:57:57.588 [main] [HikariConfig.logConfiguration] {} - registerMbeans................................false
+[DEBUG] 2023-06-01 15:57:57.588 [main] [HikariConfig.logConfiguration] {} - scheduledExecutor................................none
+[DEBUG] 2023-06-01 15:57:57.589 [main] [HikariConfig.logConfiguration] {} - schema................................none
+[DEBUG] 2023-06-01 15:57:57.589 [main] [HikariConfig.logConfiguration] {} - threadFactory................................internal
+[DEBUG] 2023-06-01 15:57:57.590 [main] [HikariConfig.logConfiguration] {} - transactionIsolation................................default
+[DEBUG] 2023-06-01 15:57:57.590 [main] [HikariConfig.logConfiguration] {} - username................................"DAILY_APP"
+[DEBUG] 2023-06-01 15:57:57.591 [main] [HikariConfig.logConfiguration] {} - validationTimeout................................5000
+[INFO ] 2023-06-01 15:57:57.591 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Starting...
+[DEBUG] 2023-06-01 15:57:58.435 [main] [HikariPool.checkFailFast] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6f0a4e30
+[INFO ] 2023-06-01 15:57:58.437 [main] [HikariDataSource.getConnection] {} - HikariPool-1 - Start completed.
+[DEBUG] 2023-06-01 15:57:58.538 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[DEBUG] 2023-06-01 15:57:58.940 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@270ded98
+[DEBUG] 2023-06-01 15:57:59.550 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1f35993a
+[DEBUG] 2023-06-01 15:57:59.876 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@67f3e64e
+[DEBUG] 2023-06-01 15:58:00.208 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@35d0bd5c
+[DEBUG] 2023-06-01 15:58:00.529 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7cf74d40
+[DEBUG] 2023-06-01 15:58:00.845 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@325b8501
+[DEBUG] 2023-06-01 15:58:01.161 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6ad782
+[DEBUG] 2023-06-01 15:58:01.487 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2dbc5936
+[DEBUG] 2023-06-01 15:58:01.815 [HikariPool-1 connection adder] [HikariPool$PoolEntryCreator.call] {} - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@57074b4a
+[DEBUG] 2023-06-01 15:58:01.815 [HikariPool-1 connection adder] [HikariPool.logPoolState] {} - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:58:28.541 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:58:28.541 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:58:58.542 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:58:58.542 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2023-06-01 15:59:28.545 [HikariPool-1 housekeeper] [HikariPool.logPoolState] {} - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2023-06-01 15:59:28.545 [HikariPool-1 housekeeper] [HikariPool.fillPool] {} - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

@@ -1,0 +1,21 @@
+<div *ngIf="inputs?.length">
+  <app-service-form [source]="'rateplansGroups'" [inputs]="inputs" [isInline]="true">
+  </app-service-form>
+  <div class="row align pt-3 pb-3">
+    <button
+      pButton
+      class="btn btn-basic right-0"
+      type="button"
+      label="Add Rateplane Group"
+      *ngIf="enableAdd"
+      (click)="addRateplaneGroup()"
+    ></button>
+  </div>
+  <app-services-list
+    [source]="'rateplansGroups'"
+    [inputs]="inputs"
+    [enableUpdate]="enableUpdate"
+    [enableDelete]="enableDelete"
+    [viewDetails]="viewDetails"
+  ></app-services-list>
+</div>

@@ -1,0 +1,58 @@
+<header class="header justify-content-between">
+  <div class="logo-img">
+    <img src="./assets/images/logo/vodafonWhiteLogo.svg" />
+  </div>
+  <div class="rightSide justify-content-end" #navContainer>
+    <!-- <span class="icon icon-bell1" pBadge  severity="danger"  styleClass="p-overlay-badge"></span> -->
+
+    <i
+      *ngIf="viewNotification"
+      class="pi pi-bell"
+      pBadge
+      value="{{ notifications ? notifications.length : 0 }}"
+      severity="danger"
+      styleClass="p-overlay-badge"
+      (click)="op.toggle($event)"
+      title="notifications"
+    ></i>
+
+    <p-overlayPanel #op appendTo="body">
+      <p-table
+        [value]="notifications"
+        selectionMode="single"
+        responsiveLayout="scroll"
+      >
+        <ng-template pTemplate="header"> </ng-template>
+        <ng-template pTemplate="body" let-rowData>
+          <tr [pSelectableRow]="rowData">
+            <td (click)="getPage(rowData, op, $event)">
+              {{ rowData.notificationHeader }}
+            </td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+          <tr>
+            <td colspan="7" style="text-align: center">
+              No Notification found.
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-overlayPanel>
+    <span class="break" *ngIf="viewNotification">|</span>
+    <div class="calenderIcon">
+      <p-calendar
+        [(ngModel)]="dateValue"
+        styleClass="only-icon"
+        [showIcon]="true"
+        inputId="icon"
+        [appendTo]="navContainer"
+        (onSelect)="change()"
+      ></p-calendar>
+      <span class="date">{{ dateValue | date: "dd-MMM-y" }}</span>
+    </div>
+    <span class="break">|</span>
+    <span class="text">{{ userName }}</span>
+    <span class="pi pi-sign-out" (click)="logout()" title="logout"></span>
+  </div>
+</header>

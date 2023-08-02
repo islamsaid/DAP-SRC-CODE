@@ -1,0 +1,541 @@
+[INFO ] 2023-01-19 19:00:39.241 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:00:40.415 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:00:40.480 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:01:37.666 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:01:38.823 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:01:38.885 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:02:16.531 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:02:17.681 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:02:17.736 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:03:13.128 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:03:14.284 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:03:14.327 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:04:11.767 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:04:12.922 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:04:12.973 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:04:51.105 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-01-19 19:04:51.219 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:04:51.243 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/notification-service/dev/development-phase1": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:06:24.045 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:06:24.279 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:06:24.280 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:06:24.289 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:06:25.636 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:06:26.195 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:06:26.207 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:06:26.208 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:06:26.209 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:06:26.419 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:06:26.420 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2111 ms
+[INFO ] 2023-01-19 19:06:29.751 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:06:29.809 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:06:29.865 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:06:29.904 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:06:31.271 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:06:31.328 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 11.105 seconds (JVM running for 12.13)
+[DEBUG] 2023-01-19 19:06:31.342 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:06:31.343 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:06:32.378 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:06:33.028 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:06:44.097 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:06:44.340 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-19 19:13:20.292 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:13:22.579 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://10.0.20.41:7070. Will be trying the next url if available
+[ERROR] 2023-01-19 19:13:22.614 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://10.0.20.41:7070/notification-service/dev/development-phase1": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:13:53.084 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:13:55.359 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://10.0.20.41:7070. Will be trying the next url if available
+[ERROR] 2023-01-19 19:13:55.414 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://10.0.20.41:7070/notification-service/dev/development-phase1": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:15:18.495 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:15:18.782 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:15:18.783 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:15:18.794 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:15:20.065 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:15:20.658 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:15:20.668 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:15:20.669 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:15:20.670 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:15:20.844 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:15:20.845 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2038 ms
+[INFO ] 2023-01-19 19:15:23.581 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:15:23.621 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:15:23.676 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:15:23.709 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:15:25.062 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:15:25.118 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.308 seconds (JVM running for 11.26)
+[DEBUG] 2023-01-19 19:15:25.127 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:15:25.127 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:15:25.937 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:15:26.233 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:15:29.703 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:15:29.921 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-19 19:26:05.757 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:26:05.967 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:26:05.969 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:26:05.976 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:26:07.306 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:26:07.878 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:26:07.891 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:26:07.892 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:26:07.892 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:26:08.130 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:26:08.131 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2136 ms
+[INFO ] 2023-01-19 19:26:11.147 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:26:11.202 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:26:11.275 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:26:11.361 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:26:12.739 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:26:12.765 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.706 seconds (JVM running for 11.705)
+[DEBUG] 2023-01-19 19:26:12.778 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:26:12.778 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:26:13.629 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:26:13.909 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:26:42.072 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:26:42.139 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-19 19:29:10.990 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:29:11.245 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:29:11.246 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:29:11.260 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:29:12.562 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:29:13.071 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:29:13.082 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:29:13.083 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:29:13.083 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:29:13.277 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:29:13.278 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1992 ms
+[INFO ] 2023-01-19 19:29:15.991 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:29:16.043 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:29:16.106 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:29:16.150 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:29:17.515 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:29:17.564 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.3 seconds (JVM running for 11.272)
+[DEBUG] 2023-01-19 19:29:17.582 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:29:17.582 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:29:18.404 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:29:18.696 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:29:20.568 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:29:20.637 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-19 19:32:26.297 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:32:26.536 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:32:26.538 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:32:26.545 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:32:28.060 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:32:28.730 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:32:28.746 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:32:28.747 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:32:28.748 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:32:28.998 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:32:28.998 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2434 ms
+[INFO ] 2023-01-19 19:32:32.024 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:32:32.067 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:32:32.144 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:32:32.192 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:32:33.608 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:32:33.628 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 11.359 seconds (JVM running for 12.544)
+[DEBUG] 2023-01-19 19:32:33.640 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:32:33.640 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:32:34.461 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:32:34.736 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:32:36.903 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:32:36.974 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-19 19:35:09.194 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:35:09.440 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:35:09.441 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:35:09.453 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:35:11.280 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:35:12.001 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:35:12.018 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:35:12.019 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:35:12.020 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:35:12.354 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:35:12.355 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2875 ms
+[INFO ] 2023-01-19 19:35:15.753 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:35:15.791 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:35:15.874 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:35:15.933 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:35:17.519 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:35:17.545 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.778 seconds (JVM running for 14.063)
+[DEBUG] 2023-01-19 19:35:17.560 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:35:17.560 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:35:18.692 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:35:18.958 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:35:20.313 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:35:20.389 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-19 19:37:38.154 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:37:38.386 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:37:38.386 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:37:38.395 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:37:39.998 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:37:40.681 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:37:40.697 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:37:40.698 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:37:40.700 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:37:40.996 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:37:40.997 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2575 ms
+[INFO ] 2023-01-19 19:37:44.597 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:37:44.655 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:37:44.733 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:37:44.783 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:37:46.295 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:37:46.320 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.328 seconds (JVM running for 13.613)
+[DEBUG] 2023-01-19 19:37:46.331 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:37:46.331 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:37:47.390 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:37:47.703 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:37:50.503 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:37:50.593 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-19 19:45:32.318 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:45:32.569 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:45:32.570 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:45:32.580 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:45:34.229 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:45:34.918 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:45:34.932 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:45:34.933 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:45:34.934 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:45:35.198 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:45:35.199 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2596 ms
+[INFO ] 2023-01-19 19:45:38.493 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:45:38.533 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:45:38.606 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:45:38.653 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:45:40.134 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:45:40.160 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.367 seconds (JVM running for 13.756)
+[DEBUG] 2023-01-19 19:45:40.174 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-19 19:45:40.174 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-19 19:45:41.183 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-19 19:45:41.609 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-19 19:45:47.509 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-19 19:45:47.587 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[ERROR] 2023-01-19 19:59:03.635 [pool-5-thread-2] [NotificationsDao.getServiceClassKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-19 19:59:03.636 [pool-5-thread-3] [NotificationsDao.getPriceGroupKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-19 19:59:03.636 [pool-5-thread-1] [NotificationsDao.getRatePlanKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-19 19:59:03.636 [pool-5-thread-4] [NotificationsDao.getTariffModelKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved

@@ -1,0 +1,545 @@
+[INFO ] 2023-06-01 15:06:16.796 [restartedMain] [DeferredLog.logTo] {} - The Class-Path manifest attribute in C:\Users\islam.said\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/islam.said/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+[INFO ] 2023-06-01 15:06:16.809 [restartedMain] [DeferredLog.logTo] {} - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2023-06-01 15:06:17.989 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-06-01 15:06:19.174 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-06-01 15:06:19.208 [restartedMain] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.0.3.jar:3.0.3]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.0.3.jar:3.0.3]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappusermanagementservice.UserManagementServiceApplication.main(UserManagementServiceApplication.java:14) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/user-management-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 12 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 12 more
+[INFO ] 2023-06-01 15:08:03.547 [restartedMain] [DeferredLog.logTo] {} - The Class-Path manifest attribute in C:\Users\islam.said\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/islam.said/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+[INFO ] 2023-06-01 15:08:03.558 [restartedMain] [DeferredLog.logTo] {} - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2023-06-01 15:08:04.748 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-06-01 15:08:05.918 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-06-01 15:08:05.966 [restartedMain] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.0.3.jar:3.0.3]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.0.3.jar:3.0.3]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappusermanagementservice.UserManagementServiceApplication.main(UserManagementServiceApplication.java:14) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/user-management-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 12 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 12 more
+[INFO ] 2023-06-01 15:09:10.991 [restartedMain] [DeferredLog.logTo] {} - The Class-Path manifest attribute in C:\Users\islam.said\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/islam.said/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+[INFO ] 2023-06-01 15:09:11.005 [restartedMain] [DeferredLog.logTo] {} - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2023-06-01 15:09:12.115 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-06-01 15:09:13.361 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-06-01 15:09:13.409 [restartedMain] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.0.3.jar:3.0.3]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.0.3.jar:3.0.3]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappusermanagementservice.UserManagementServiceApplication.main(UserManagementServiceApplication.java:14) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/user-management-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 12 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 12 more
+[INFO ] 2023-06-01 15:15:16.239 [restartedMain] [DeferredLog.logTo] {} - The Class-Path manifest attribute in C:\Users\islam.said\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/islam.said/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+[INFO ] 2023-06-01 15:15:16.278 [restartedMain] [DeferredLog.logTo] {} - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2023-06-01 15:15:21.157 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:15:22.008 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:15:22.011 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:15:22.059 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:15:27.324 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:15:29.440 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:15:29.478 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:15:29.480 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:15:29.482 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:15:29.912 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:15:29.914 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 7745 ms
+[INFO ] 2023-06-01 15:15:34.041 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:15:34.942 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:15:35.165 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:15:35.289 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:15:36.193 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 25.107 seconds (JVM running for 29.261)
+[DEBUG] 2023-06-01 15:15:36.214 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:15:36.215 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:17:23.319 [http-nio-8087-exec-4] [DirectJDKLog.log] {} - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2023-06-01 15:17:23.320 [http-nio-8087-exec-4] [FrameworkServlet.initServletBean] {} - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2023-06-01 15:17:23.324 [http-nio-8087-exec-4] [FrameworkServlet.initServletBean] {} - Completed initialization in 3 ms
+[WARN ] 2023-06-01 15:17:23.363 [http-nio-8087-exec-4] [ResponseEntityExceptionHandler.handleHttpRequestMethodNotSupported] {} - Request method 'GET' not supported
+[WARN ] 2023-06-01 15:17:23.377 [http-nio-8087-exec-4] [AbstractHandlerExceptionResolver.logException] {} - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[DEBUG] 2023-06-01 15:17:28.881 [http-nio-8087-exec-5] [UsersDaoImp.retrieveUserByUsername] {traceId=95bebe27-63b3-4e69-95f9-573ffdd2275c} - SQL Query = SELECT * FROM ADM_USERS WHERE LOWER(USERNAME) = ? AND LOCK_FLAG= 0
+[ERROR] 2023-06-01 15:17:29.032 [http-nio-8087-exec-5] [UserService.retrieveUserByName] {traceId=95bebe27-63b3-4e69-95f9-573ffdd2275c} - User not found
+[ERROR] 2023-06-01 15:17:29.036 [http-nio-8087-exec-5] [ControllerExceptionInterceptor.handelUserManagementException] {traceId=95bebe27-63b3-4e69-95f9-573ffdd2275c} -  An error has occurred exc: null
+[DEBUG] 2023-06-01 15:17:29.146 [http-nio-8087-exec-5] [ControllerExceptionInterceptor.handelUserManagementException] {traceId=95bebe27-63b3-4e69-95f9-573ffdd2275c} - create Api Response
+[WARN ] 2023-06-01 15:17:29.171 [http-nio-8087-exec-5] [AbstractHandlerExceptionResolver.logException] {} - Resolved [com.asset.dailyappusermanagementservice.exception.UserManagementException]
+[DEBUG] 2023-06-01 15:18:09.111 [http-nio-8087-exec-8] [UsersDaoImp.retrieveUserByUsername] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - SQL Query = SELECT * FROM ADM_USERS WHERE LOWER(USERNAME) = ? AND LOCK_FLAG= 0
+[DEBUG] 2023-06-01 15:18:09.195 [http-nio-8087-exec-8] [ProfileDaoImp.get] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - Query#3 = SELECT DAILY_PROFILES.IS_ACTIVE, DAILY_PROFILES.ID AS PROFILE_ID,DAILY_PROFILES.NAME AS PROFILE_NAME,DAILY_PRIVILEGES.ID AS PRIVILEGE_ID,DAILY_PRIVILEGES.NAME AS PRIVILEGE_NAME,DAILY_PRIVILEGES.PAGE_NAME,DAILY_PRIVILEGES.BACK_END_URL,DAILY_PRIVILEGES.DESCRIPTION FROM DAILY_PROFILES LEFT JOIN DAILY_PROFILE_PRIVILEGES ON DAILY_PROFILE_PRIVILEGES.PROFILE_ID = DAILY_PROFILES.ID LEFT JOIN DAILY_PRIVILEGES ON DAILY_PRIVILEGES.ID = DAILY_PROFILE_PRIVILEGES.PRIVILEGES_ID WHERE DAILY_PROFILES.ID = ? 
+[DEBUG] 2023-06-01 15:18:09.499 [http-nio-8087-exec-8] [UserService.detectActiveUser] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - detecting user's active sessions
+[INFO ] 2023-06-01 15:18:09.500 [http-nio-8087-exec-8] [UserService.isActiveUser] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - has previous token = false 
+[INFO ] 2023-06-01 15:18:09.501 [http-nio-8087-exec-8] [UserService.detectActiveUser] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - User is inactive and able to create a new session
+[INFO ] 2023-06-01 15:18:09.530 [http-nio-8087-exec-8] [UserService.login] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - Login with user [UserModel(userId=72, name=menna, username=menna, profileId=62, lockFlag=0, profileModel=UserProfileModel{id=62, name='Super Admin', isActive=1, createdBY=0, privileges=[LkPrivilegeModel{id=2, name='get_user_by_id', pageName='user_managment', backEndUrl='/user-management-service/user/get', description='get user by id '}, LkPrivilegeModel{id=3, name='add_user', pageName='user_managment', backEndUrl='/user-management-service/user/add', description='add user'}, LkPrivilegeModel{id=1, name='get_all_users', pageName='user_managment ', backEndUrl='/user-management-service/user/get-all', description='get all users'}, LkPrivilegeModel{id=4, name='update user', pageName='user_management', backEndUrl='/user-management-service/user/update', description='update user'}, LkPrivilegeModel{id=5, name='delete user', pageName='user_management', backEndUrl='/user-management-service/user/delete', description='delete user'}, LkPrivilegeModel{id=6, name='add profile', pageName='profile_management', backEndUrl='/user-management-service/profile/add', description='add profile'}, LkPrivilegeModel{id=7, name='get profile by id ', pageName='profile_management', backEndUrl='/user-management-service/profile/get', description='get profile by id '}, LkPrivilegeModel{id=8, name='get all profiles ', pageName='profile_management', backEndUrl='/user-management-service/profile/get-all', description='get all profiles '}, LkPrivilegeModel{id=9, name='delete profile', pageName='profile_management', backEndUrl='/user-management-service/profile/delete', description='delete profile'}, LkPrivilegeModel{id=10, name='update profile', pageName='profile_management', backEndUrl='/user-management-service/profile/update', description='update profile'}, LkPrivilegeModel{id=11, name='get all services class', pageName='service_class', backEndUrl='/lookup-service/service-classes/get-all', description='get all services class'}, LkPrivilegeModel{id=12, name='update service class ', pageName='service_class', backEndUrl='/lookup-service/service-classes/update-batch', description='update service class'}, LkPrivilegeModel{id=13, name='get all tariff model', pageName='service_tarrif', backEndUrl='/lookup-service/tariff-model/get-all', description='get all tarrif model '}, LkPrivilegeModel{id=14, name='update tarrif model', pageName='service_tarrif', backEndUrl='/lookup-service/tariff-model/update-batch', description='update tarrif model'}, LkPrivilegeModel{id=15, name='get all rate plans', pageName='rate_plan', backEndUrl='/lookup-service/rate-plan/get-all', description='get all rate plan'}, LkPrivilegeModel{id=16, name='update rate plan', pageName='rate_plan', backEndUrl='/lookup-service/rate-plan/update', description='update rate plan'}, LkPrivilegeModel{id=17, name='update_rate_plan_list', pageName='rate_plan', backEndUrl='/lookup-service/rate-plan/update-batch', description='update list of rate plans '}, LkPrivilegeModel{id=18, name='get_all_rate_paln_groups', pageName='rate_plan_group', backEndUrl='/lookup-service/rate-plan-groups/get-all', description='get_all_rate_plan_group'}, LkPrivilegeModel{id=19, name='get_rate_group_by_id', pageName='rate_plan_group', backEndUrl='/lookup-service/rate-plan/get', description='get_rate_group_by_id'}, LkPrivilegeModel{id=20, name='update_rate_plan_group', pageName='rate_plan_group', backEndUrl='/lookup-service/rate-plan-groups/update', description='update_rate_plan_group'}, LkPrivilegeModel{id=21, name='add_rate_plan_group', pageName='rate_plan_group', backEndUrl='/lookup-service/rate-plan-groups/add', description='add rate plan group'}, LkPrivilegeModel{id=22, name='delete_rate_plan_group', pageName='rate_plan_group', backEndUrl='/lookup-service/rate-plan-groups/delete', description='delete_rate_plan_group'}, LkPrivilegeModel{id=23, name='retrive_all_price_group', pageName='price_group', backEndUrl='/lookup-service/price-group/get-all', description='retrive_all_price_group'}, LkPrivilegeModel{id=24, name='update_price_group', pageName='price_group', backEndUrl='/lookup-service/price-group/update', description='update price group'}, LkPrivilegeModel{id=25, name='retrive all price group_group', pageName='pg_group', backEndUrl='/lookup-service/price-group-groups/get-all', description='retrive all price group_group'}, LkPrivilegeModel{id=26, name='add_pg_group', pageName='pg_group', backEndUrl='/lookup-service/price-group-groups/add', description='add_pg_group'}, LkPrivilegeModel{id=27, name='update_pg_group', pageName='pg_group', backEndUrl='/lookup-service/price-group-groups/update', description='update_pg_group'}, LkPrivilegeModel{id=28, name='update_batch_pg_group', pageName='pg_group', backEndUrl='/lookup-service/price-group/update-batch', description='update_batch_pg_group'}, LkPrivilegeModel{id=29, name='get_pg_group', pageName='pg_group', backEndUrl='/lookup-service/price-group-groups/get', description='get_pg_group'}, LkPrivilegeModel{id=30, name='delete_pg_group', pageName='pg_group', backEndUrl='/lookup-service/price-group-groups/delete', description='delete_pg_group'}, LkPrivilegeModel{id=31, name='retrieve_balnce', pageName='validation-engine', backEndUrl='/report-service/validation-engine/balances/get-all', description='retrieve_balnce'}, LkPrivilegeModel{id=32, name='retrieve_agg_validation-engine', pageName='validation-engine', backEndUrl='/report-service/validation-engine/agg-data/get-all', description='aggregation_data'}, LkPrivilegeModel{id=33, name='Retrieve_trx_validation-engine', pageName='validation-engine', backEndUrl='/report-service/validation-engine/transaction-type/get-all', description='Retrieve_transaction_types'}, LkPrivilegeModel{id=34, name='Submit_validation-engine', pageName='validation-engine', backEndUrl='/report-service/validation-engine/update', description='Submit_the_adjusted_data'}, LkPrivilegeModel{id=35, name='Retrieve manual_adjustment', pageName='manual_adjustment', backEndUrl='/report-service/manual-adjustment/agg-data/get-all', description='Retrieve aggregation data'}, LkPrivilegeModel{id=36, name='submit_manual_adjustment', pageName='manual_adjustment', backEndUrl='/report-service/manual-adjustment/agg-data/get-all', description='submit_aggregated_data'}, LkPrivilegeModel{id=37, name='Retrieve_transfer_adjustment', pageName='transfer_adjustment', backEndUrl='/report-service/transfer-adjustment/agg-data/get-all', description='Retrieve aggregation data'}, LkPrivilegeModel{id=38, name='submit_transfer_adjustment', pageName='transfer_adjustment', backEndUrl='/report-service/transfer-adjustment/agg-data/add', description='submit_transfer_adjustment'}]}, status=null, statusMessage=null)]
+[DEBUG] 2023-06-01 15:18:09.531 [http-nio-8087-exec-8] [UserService.login] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - Generating token for user
+[DEBUG] 2023-06-01 15:18:09.548 [http-nio-8087-exec-8] [JwtTokenUtil.doGenerateToken] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - accessTokenValidityHour : 0.05  =  accessTokenValidityMilli : 180000
+[DEBUG] 2023-06-01 15:18:10.031 [http-nio-8087-exec-8] [JwtTokenUtil.doGenerateToken] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - token generated
+[INFO ] 2023-06-01 15:18:10.034 [http-nio-8087-exec-8] [LoginController.userLogin] {traceId=56d86fb4-e4ca-47db-88d4-d8230e00d437} - IP => 192.168.30.32:8087
+[INFO ] 2023-06-01 15:18:49.871 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:18:50.666 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:18:50.666 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:18:50.672 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:18:52.680 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:18:53.098 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:18:53.117 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:18:53.122 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:18:53.125 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:18:53.393 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:18:53.397 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2720 ms
+[INFO ] 2023-06-01 15:18:55.000 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:18:55.853 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:18:55.900 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:18:55.908 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:18:56.675 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 8.865 seconds (JVM running for 229.742)
+[INFO ] 2023-06-01 15:18:56.687 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:18:56.691 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:18:56.693 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:25:23.305 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:25:23.555 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:25:23.556 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:25:23.561 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:25:25.027 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:25:25.233 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:25:25.235 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:25:25.237 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:25:25.238 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:25:25.378 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:25:25.379 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1811 ms
+[INFO ] 2023-06-01 15:25:26.315 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:25:27.155 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:25:27.185 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:25:27.191 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:25:27.894 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 6.464 seconds (JVM running for 620.965)
+[INFO ] 2023-06-01 15:25:27.899 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:25:27.902 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:25:27.902 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:26:29.174 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:26:29.704 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:26:29.704 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:26:29.709 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:26:31.249 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:26:31.704 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:26:31.706 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:26:31.718 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:26:31.720 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:26:31.963 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:26:31.964 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2250 ms
+[INFO ] 2023-06-01 15:26:33.154 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:26:34.131 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:26:34.161 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:26:34.166 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:26:34.866 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 7.839 seconds (JVM running for 687.937)
+[INFO ] 2023-06-01 15:26:34.874 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:26:34.878 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:26:34.878 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:32:01.941 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:32:02.188 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:32:02.188 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:32:02.192 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:32:03.327 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:32:03.504 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:32:03.505 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:32:03.506 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:32:03.507 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:32:03.625 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:32:03.626 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1429 ms
+[INFO ] 2023-06-01 15:32:04.355 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:32:05.198 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:32:05.328 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:32:05.334 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:32:06.207 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 5.77 seconds (JVM running for 1019.28)
+[INFO ] 2023-06-01 15:32:06.212 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:32:06.214 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:32:06.214 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:32:55.277 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:32:55.507 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:32:55.508 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:32:55.513 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:32:56.417 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:32:56.578 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:32:56.643 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:32:56.644 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:32:56.644 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:32:56.781 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:32:56.781 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1264 ms
+[INFO ] 2023-06-01 15:32:57.368 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:32:58.580 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:32:58.613 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:32:58.619 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:32:59.740 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 6.251 seconds (JVM running for 1072.813)
+[INFO ] 2023-06-01 15:32:59.749 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:32:59.752 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:32:59.752 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:34:13.046 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:34:13.277 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:34:13.277 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:34:13.281 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:34:14.141 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:34:14.257 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:34:14.258 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:34:14.259 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:34:14.260 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:34:14.394 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:34:14.395 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1107 ms
+[INFO ] 2023-06-01 15:34:15.535 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:34:16.479 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:34:16.525 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:34:16.533 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:34:17.378 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 5.853 seconds (JVM running for 1150.45)
+[INFO ] 2023-06-01 15:34:17.386 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:34:17.388 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:34:17.392 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:34:47.595 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:34:47.815 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:34:47.815 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:34:47.819 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:34:48.691 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:34:48.861 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:34:48.862 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:34:48.863 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:34:48.864 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:34:49.039 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:34:49.039 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1216 ms
+[INFO ] 2023-06-01 15:34:50.062 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:34:51.046 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:34:51.088 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:34:51.094 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:34:51.992 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 6.159 seconds (JVM running for 1185.064)
+[INFO ] 2023-06-01 15:34:51.998 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:34:52.002 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:34:52.003 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:38:58.365 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:38:58.615 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:38:58.616 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:38:58.619 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:38:59.424 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:38:59.588 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:38:59.590 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:38:59.590 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:38:59.591 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:38:59.712 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:38:59.712 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1088 ms
+[INFO ] 2023-06-01 15:39:00.530 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:39:01.312 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:39:01.355 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:39:01.362 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:39:02.280 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 5.221 seconds (JVM running for 1435.353)
+[INFO ] 2023-06-01 15:39:02.289 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:39:02.291 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:39:02.291 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:39:33.242 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:39:33.471 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:39:33.471 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:39:33.475 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:39:34.487 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:39:34.644 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:39:34.647 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:39:34.648 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:39:34.648 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:39:34.783 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:39:34.783 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1304 ms
+[INFO ] 2023-06-01 15:39:35.507 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:39:36.448 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:39:36.475 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:39:36.481 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:39:37.502 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 5.804 seconds (JVM running for 1470.576)
+[INFO ] 2023-06-01 15:39:37.508 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:39:37.510 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:39:37.510 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:41:30.374 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:41:30.602 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:41:30.602 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:41:30.606 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:41:31.365 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:41:31.484 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:41:31.485 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:41:31.486 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:41:31.486 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:41:31.581 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:41:31.581 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 969 ms
+[INFO ] 2023-06-01 15:41:32.166 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:41:32.963 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:41:32.992 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:41:32.998 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:41:33.746 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 4.673 seconds (JVM running for 1586.82)
+[INFO ] 2023-06-01 15:41:33.750 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:41:33.752 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:41:33.753 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:42:19.358 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:42:19.590 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:42:19.591 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:42:19.593 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:42:20.270 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:42:20.407 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:42:20.409 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:42:20.410 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:42:20.411 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:42:20.522 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:42:20.523 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 924 ms
+[INFO ] 2023-06-01 15:42:21.213 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:42:22.611 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:42:22.638 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:42:22.644 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:42:23.436 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 5.562 seconds (JVM running for 1636.51)
+[INFO ] 2023-06-01 15:42:23.440 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:42:23.441 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:42:23.441 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:45:09.312 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:45:09.523 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:45:09.523 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:45:09.526 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:45:10.088 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:45:10.153 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:45:10.154 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:45:10.154 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:45:10.155 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:45:10.208 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:45:10.208 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 678 ms
+[INFO ] 2023-06-01 15:45:10.503 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:45:11.201 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:45:11.222 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:45:11.228 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:45:11.896 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 3.713 seconds (JVM running for 1804.971)
+[INFO ] 2023-06-01 15:45:11.902 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:45:11.904 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:45:11.904 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:45:38.530 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:45:38.766 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:45:38.766 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:45:38.767 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:45:39.082 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:45:39.172 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:45:39.173 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:45:39.174 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:45:39.174 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:45:39.273 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:45:39.274 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 504 ms
+[INFO ] 2023-06-01 15:45:40.115 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:45:40.847 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:45:40.871 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:45:40.876 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:45:41.572 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 4.326 seconds (JVM running for 1834.646)
+[INFO ] 2023-06-01 15:45:41.575 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:45:41.576 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:45:41.576 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:46:49.115 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:46:49.344 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:46:49.344 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:46:49.348 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:46:50.087 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:46:50.201 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:46:50.203 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:46:50.203 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:46:50.204 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:46:50.302 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:46:50.302 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 950 ms
+[INFO ] 2023-06-01 15:46:50.848 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:46:51.635 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:46:51.654 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:46:51.659 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:46:52.326 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 4.596 seconds (JVM running for 1905.4)
+[INFO ] 2023-06-01 15:46:52.330 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:46:52.333 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:46:52.333 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:47:34.250 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:47:34.474 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:47:34.475 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:47:34.478 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:47:34.862 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:47:34.920 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:47:34.921 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:47:34.922 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:47:34.922 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:47:34.979 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:47:34.979 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 497 ms
+[INFO ] 2023-06-01 15:47:35.480 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:47:36.170 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:47:36.192 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:47:36.198 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:47:36.865 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 3.779 seconds (JVM running for 1949.939)
+[INFO ] 2023-06-01 15:47:36.870 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:47:36.872 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:47:36.872 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:55:40.144 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:55:40.361 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:55:40.361 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:55:40.363 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:55:40.975 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:55:41.094 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:55:41.095 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:55:41.096 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:55:41.096 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:55:41.204 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:55:41.204 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 839 ms
+[INFO ] 2023-06-01 15:55:41.751 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:55:42.525 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:55:42.544 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:55:42.549 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:55:43.770 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 4.757 seconds (JVM running for 2436.845)
+[INFO ] 2023-06-01 15:55:43.773 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:55:43.775 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:55:43.775 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:56:20.119 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:56:20.351 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:56:20.351 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:56:20.354 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:56:21.110 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:56:21.308 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:56:21.311 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:56:21.312 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:56:21.312 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:56:21.444 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:56:21.445 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1084 ms
+[INFO ] 2023-06-01 15:56:22.086 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:56:22.579 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:56:22.590 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:56:22.594 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:56:23.028 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 4.232 seconds (JVM running for 2476.104)
+[INFO ] 2023-06-01 15:56:23.031 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:56:23.032 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:56:23.032 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:57:09.383 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:57:09.591 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:57:09.591 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:57:09.594 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:57:10.108 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:57:10.263 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:57:10.264 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:57:10.265 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:57:10.265 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:57:10.433 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:57:10.434 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 836 ms
+[INFO ] 2023-06-01 15:57:11.006 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:57:11.815 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:57:11.965 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:57:11.973 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:57:12.688 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 4.7 seconds (JVM running for 2525.764)
+[INFO ] 2023-06-01 15:57:12.694 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:57:12.696 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:57:12.696 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database
+[INFO ] 2023-06-01 15:57:41.635 [restartedMain] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:57:41.868 [restartedMain] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=user-management-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:57:41.869 [restartedMain] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-user-management-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:57:41.875 [restartedMain] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:57:42.538 [restartedMain] [GenericScope.setSerializationId] {} - BeanFactory id=f4025856-739b-31b1-bdf4-8348de687092
+[INFO ] 2023-06-01 15:57:42.641 [restartedMain] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2023-06-01 15:57:42.643 [restartedMain] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:57:42.645 [restartedMain] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-06-01 15:57:42.645 [restartedMain] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-06-01 15:57:42.774 [restartedMain] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-06-01 15:57:42.774 [restartedMain] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 895 ms
+[INFO ] 2023-06-01 15:57:43.131 [restartedMain] [OptionalLiveReloadServer.startServer] {} - LiveReload server is running on port 35729
+[INFO ] 2023-06-01 15:57:43.847 [restartedMain] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-06-01 15:57:43.876 [restartedMain] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2023-06-01 15:57:43.882 [restartedMain] [TomcatWebServer.start] {} - Tomcat started on port(s): 8087 (http) with context path '/user-management-service'
+[INFO ] 2023-06-01 15:57:44.724 [restartedMain] [StartupInfoLogger.logStarted] {} - Started UserManagementServiceApplication in 4.482 seconds (JVM running for 2557.799)
+[INFO ] 2023-06-01 15:57:44.730 [restartedMain] [ConditionEvaluationDeltaLoggingListener.onApplicationEvent] {} - Condition evaluation unchanged
+[DEBUG] 2023-06-01 15:57:44.732 [restartedMain] [QueriesCache.readeAllQueries] {} - Start Latest Packages 
+[DEBUG] 2023-06-01 15:57:44.733 [restartedMain] [QueriesCache.readeAllQueries] {} - Start retrieving all Queries from database

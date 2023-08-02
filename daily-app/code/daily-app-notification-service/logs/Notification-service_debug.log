@@ -1,0 +1,288 @@
+[INFO ] 2023-01-23 16:26:22.506 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 16:26:22.805 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 16:26:22.807 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 16:26:22.833 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 16:26:24.678 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 16:26:25.404 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 16:26:25.416 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 16:26:25.417 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 16:26:25.417 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 16:26:25.724 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 16:26:25.725 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2872 ms
+[INFO ] 2023-01-23 16:26:29.247 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 16:26:29.288 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 16:26:29.346 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 16:26:29.387 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 16:26:31.061 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 16:26:31.120 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.657 seconds (JVM running for 13.995)
+[DEBUG] 2023-01-23 16:26:31.133 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 16:26:31.133 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 16:26:32.013 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 16:26:32.287 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 16:26:32.610 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 16:26:32.689 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 16:30:23.241 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 16:30:23.532 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 16:30:23.533 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 16:30:23.541 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 16:30:24.953 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 16:30:25.671 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 16:30:25.875 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 16:30:25.902 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 16:30:25.903 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 16:30:26.197 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 16:30:26.198 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2640 ms
+[INFO ] 2023-01-23 16:30:29.502 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 16:30:29.546 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 16:30:29.616 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 16:30:29.660 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 16:30:31.071 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 16:30:31.107 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.172 seconds (JVM running for 13.221)
+[DEBUG] 2023-01-23 16:30:31.120 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 16:30:31.120 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 16:30:32.083 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 16:30:32.479 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 16:30:32.904 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 16:30:32.959 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 17:57:08.299 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 17:57:08.514 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 17:57:08.516 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 17:57:08.530 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 17:57:09.793 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 17:57:10.337 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 17:57:10.348 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 17:57:10.349 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 17:57:10.349 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 17:57:10.556 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 17:57:10.556 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2010 ms
+[INFO ] 2023-01-23 17:57:13.639 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 17:57:13.708 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 17:57:13.768 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 17:57:13.803 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 17:57:15.152 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 17:57:15.191 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.607 seconds (JVM running for 11.582)
+[DEBUG] 2023-01-23 17:57:15.209 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 17:57:15.210 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 17:57:16.170 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 17:57:16.563 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 17:57:16.994 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 17:57:17.032 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 18:00:56.513 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 18:00:56.755 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 18:00:56.756 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 18:00:56.767 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 18:00:58.469 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 18:00:59.205 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 18:00:59.218 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 18:00:59.219 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 18:00:59.220 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 18:00:59.498 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 18:00:59.500 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2710 ms
+[INFO ] 2023-01-23 18:01:02.734 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 18:01:02.771 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 18:01:02.829 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 18:01:02.885 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 18:01:04.421 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 18:01:04.447 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.147 seconds (JVM running for 13.461)
+[DEBUG] 2023-01-23 18:01:04.462 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 18:01:04.462 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 18:01:05.365 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 18:01:05.634 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 18:01:05.959 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 18:01:05.995 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 18:17:28.859 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 18:17:29.277 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 18:17:29.279 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 18:17:29.290 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 18:17:31.331 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 18:17:32.208 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 18:17:32.227 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 18:17:32.228 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 18:17:32.230 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 18:17:32.580 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 18:17:32.581 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 3264 ms
+[INFO ] 2023-01-23 18:17:36.458 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 18:17:36.513 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 18:17:36.604 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 18:17:36.658 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 18:17:38.282 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 18:17:38.313 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 14.341 seconds (JVM running for 16.328)
+[DEBUG] 2023-01-23 18:17:38.326 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 18:17:38.326 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 18:17:40.081 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 18:17:40.862 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 18:17:41.862 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 18:17:41.967 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[ERROR] 2023-01-23 18:51:46.328 [pool-5-thread-4] [NotificationsDao.getRatePlanKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 18:51:46.329 [pool-5-thread-1] [NotificationsDao.getPriceGroupKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 18:51:46.328 [pool-5-thread-2] [NotificationsDao.getTariffModelKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 18:53:53.535 [pool-5-thread-3] [NotificationsDao.getServiceClassKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[INFO ] 2023-01-23 18:57:03.573 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 18:57:03.803 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 18:57:03.804 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 18:57:03.811 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 18:57:05.018 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 18:57:05.510 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 18:57:05.520 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 18:57:05.521 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 18:57:05.521 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 18:57:05.712 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 18:57:05.713 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1887 ms
+[INFO ] 2023-01-23 18:57:08.216 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 18:57:08.276 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 18:57:08.330 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 18:57:08.366 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 18:57:09.731 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 18:57:09.775 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.054 seconds (JVM running for 10.999)
+[DEBUG] 2023-01-23 18:57:09.785 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 18:57:09.785 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 18:57:10.571 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 18:57:10.844 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 18:57:11.148 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 18:57:11.183 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[ERROR] 2023-01-23 19:13:20.219 [pool-5-thread-2] [NotificationsDao.getServiceClassKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:13:20.233 [pool-5-thread-1] [NotificationsDao.getPriceGroupKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:13:20.233 [pool-5-thread-4] [NotificationsDao.getRatePlanKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:13:20.233 [pool-5-thread-3] [NotificationsDao.getTariffModelKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[INFO ] 2023-01-23 19:18:45.503 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 19:18:45.695 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 19:18:45.697 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 19:18:45.705 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 19:18:46.919 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 19:18:47.397 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 19:18:47.408 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:18:47.408 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 19:18:47.409 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 19:18:47.606 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 19:18:47.607 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1887 ms
+[INFO ] 2023-01-23 19:18:50.146 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:18:50.178 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 19:18:50.223 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:18:50.271 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 19:18:51.619 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:18:51.651 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 9.678 seconds (JVM running for 10.511)
+[DEBUG] 2023-01-23 19:18:51.660 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 19:18:51.660 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 19:18:52.445 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 19:18:52.713 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 19:18:53.023 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 19:18:53.062 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 19:21:35.044 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 19:21:35.260 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 19:21:35.262 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 19:21:35.277 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 19:21:36.355 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 19:21:36.870 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 19:21:36.880 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:21:36.881 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 19:21:36.882 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 19:21:37.064 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 19:21:37.065 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1761 ms
+[INFO ] 2023-01-23 19:21:39.582 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:21:39.635 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 19:21:39.694 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:21:39.726 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 19:21:41.039 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:21:41.079 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 9.619 seconds (JVM running for 10.44)
+[DEBUG] 2023-01-23 19:21:41.092 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 19:21:41.092 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 19:21:41.897 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 19:21:42.165 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 19:21:42.474 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 19:21:42.524 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 19:24:02.195 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 19:24:02.394 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 19:24:02.395 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 19:24:02.403 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 19:24:03.637 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 19:24:04.153 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 19:24:04.162 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:24:04.163 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 19:24:04.163 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 19:24:04.357 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 19:24:04.357 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1935 ms
+[INFO ] 2023-01-23 19:24:07.002 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:24:07.069 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 19:24:07.124 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:24:07.157 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 19:24:08.493 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:24:08.544 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.104 seconds (JVM running for 11.037)
+[DEBUG] 2023-01-23 19:24:08.560 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 19:24:08.561 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 19:24:09.380 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 19:24:09.668 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 19:24:09.988 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 19:24:10.035 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 19:26:25.490 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 19:26:25.703 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 19:26:25.704 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 19:26:25.711 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 19:26:26.808 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 19:26:27.281 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 19:26:27.290 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:26:27.291 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 19:26:27.291 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 19:26:27.461 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 19:26:27.462 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1737 ms
+[INFO ] 2023-01-23 19:26:29.833 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:26:29.897 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 19:26:29.949 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:26:29.976 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 19:26:31.264 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:26:31.317 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 9.369 seconds (JVM running for 10.221)
+[DEBUG] 2023-01-23 19:26:31.326 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 19:26:31.326 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 19:26:32.088 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 19:26:32.351 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 19:26:32.741 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 19:26:32.789 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[ERROR] 2023-01-23 19:29:59.922 [pool-5-thread-2] [NotificationsDao.getPriceGroupKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:29:59.922 [pool-5-thread-1] [NotificationsDao.getTariffModelKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:29:59.923 [pool-5-thread-4] [NotificationsDao.getServiceClassKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:29:59.922 [pool-5-thread-3] [NotificationsDao.getRatePlanKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[INFO ] 2023-01-23 19:32:25.184 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 19:32:25.404 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 19:32:25.405 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 19:32:25.411 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 19:32:26.562 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 19:32:27.038 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 19:32:27.048 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:32:27.049 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 19:32:27.050 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 19:32:27.226 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 19:32:27.226 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1802 ms
+[INFO ] 2023-01-23 19:32:29.869 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:32:29.937 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 19:32:29.986 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:32:30.015 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 19:32:31.313 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:32:31.353 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 9.734 seconds (JVM running for 10.557)
+[DEBUG] 2023-01-23 19:32:31.366 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 19:32:31.367 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 19:32:32.321 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 19:32:32.653 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 19:32:33.045 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 19:32:33.083 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account
+[INFO ] 2023-01-23 19:34:16.971 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-23 19:34:17.189 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-23 19:34:17.190 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-23 19:34:17.199 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-23 19:34:18.277 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-23 19:34:18.765 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-23 19:34:18.773 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:34:18.774 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-23 19:34:18.775 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-23 19:34:18.952 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-23 19:34:18.952 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1735 ms
+[INFO ] 2023-01-23 19:34:21.358 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:34:21.420 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-23 19:34:21.458 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-23 19:34:21.486 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-23 19:34:22.802 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-23 19:34:22.820 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 9.4 seconds (JVM running for 10.233)
+[DEBUG] 2023-01-23 19:34:22.830 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>> Start Caching All Queries...
+[DEBUG] 2023-01-23 19:34:22.830 [Event-Manager] [QueriesDao.getAll] {} - >>>>>> Start Retrieving All Queries From the Database...
+[DEBUG] 2023-01-23 19:34:23.581 [Event-Manager] [AllQueriesExtractor.extractData] {} - >>>>>> Start Extracting Queries From the Database...
+[DEBUG] 2023-01-23 19:34:23.862 [Event-Manager] [QueriesCache.readeAllQueries] {} - >>>>>>>>>>>>>>>>>QUERIES ARE LOADED>>>>>>>>>>>>>>>>>
+[DEBUG] 2023-01-23 19:34:24.190 [Event-Manager] [AccountService.getAllAccount] {} - Start retrieving all email account
+[DEBUG] 2023-01-23 19:34:24.225 [Event-Manager] [AccountService.getAllAccount] {} - Done retrieving all all email account

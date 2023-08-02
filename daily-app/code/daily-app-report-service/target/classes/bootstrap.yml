@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@10.0.20.38:1521/orclpdb'
+    username: DAILY_APP_TST
+    password: DAILY_APP_TST
+  application:
+    name: report-service
+  profiles:
+    active: qa
+  cloud:
+    config:
+      uri: 'http://daily-config-server:8888'
+      label: testing-phase1
+      fail-fast: true
+server:
+  port: '8080'
+  servlet:
+    context-path: /report-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false

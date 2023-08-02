@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">./logs</Property>
+        <Property name="baseFilename">logging-Service</Property>
+        <Property name="LOG_PATTERN">
+            [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%C{1}.%M] %X - %msg%n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="errorFileAppender" fileName="${basePath}/${baseFilename}_error.log"
+                     filePattern="${basePath}/${baseFilename}_error_%d{yyyy-MM-dd}.log">
+            <PatternLayout
+                    pattern="${LOG_PATTERN}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="infoFileAppender" fileName="${basePath}/${baseFilename}_info.log"
+                     filePattern="${basePath}/${baseFilename}_info_%d{yyyy-MM-dd}.log">
+            <PatternLayout
+                pattern="${LOG_PATTERN}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+        <RollingFile name="hikariFileAppender" fileName="${basePath}/${baseFilename}_hikari.log" filePattern="${basePath}/${baseFilename}_hikari_%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+        <RollingFile name="debugFileAppender" fileName="${basePath}/${baseFilename}_debug.log"
+                     filePattern="${basePath}/${baseFilename}_debug_%d{yyyy-MM-dd}.log">
+            <PatternLayout
+                    pattern="${LOG_PATTERN}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="interfaceFileAppender" fileName="${basePath}/${baseFilename}_interface.log"
+                     filePattern="${basePath}/${baseFilename}_interface_%d{yyyy-MM-dd}.log">
+            <PatternLayout
+                    pattern="${LOG_PATTERN}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="springframeworkFileAppender" fileName="${basePath}/${baseFilename}_spring.log"
+                     filePattern="${basePath}/${baseFilename}_spring_%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="${LOG_PATTERN}" />
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="errorLogger" level="error" additivity="false">
+            <appender-ref ref="errorFileAppender" level="error" />
+        </Logger>
+
+        <Logger name="infoLogger" level="info" additivity="false">
+            <appender-ref ref="infoFileAppender" level="info" />
+            <appender-ref ref="console" level="info" />
+        </Logger>
+
+        <Logger name="debugLogger" level="debug" additivity="false">
+            <appender-ref ref="debugFileAppender" level="debug" />
+            <appender-ref ref="console" level="debug" />
+        </Logger>
+
+        <Logger name="interfacesLogger" level="All" additivity="false">
+            <appender-ref ref="interfaceFileAppender" level="All" />
+            <appender-ref ref="console" level="debug" />
+        </Logger>
+
+        <Logger name="org.springframework" level="debug" additivity="false">
+            <appender-ref ref="springframeworkFileAppender" level="debug"/>
+            <appender-ref ref="console" level="info"/>
+        </Logger>
+        <Logger name="com.zaxxer.hikari" level="debug" additivity="false">
+            <appender-ref ref="hikariFileAppender" level="debug"/>
+        </Logger>
+
+        <Root level="INFO" additivity="false">
+            <appender-ref ref="console" level="debug" />
+            <appender-ref ref="errorFileAppender" level="error" />
+            <appender-ref ref="debugFileAppender" level="debug" />
+            <appender-ref ref="infoFileAppender" level="info" />
+            <appender-ref ref="interfaceFileAppender" level="All" />
+        </Root>
+    </Loggers>
+</Configuration>

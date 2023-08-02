@@ -1,0 +1,12 @@
+[ERROR] 2023-01-23 18:51:46.286 [pool-5-thread-4] [NotificationsDao.getRatePlanKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 18:51:46.289 [pool-5-thread-2] [NotificationsDao.getTariffModelKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 18:51:46.289 [pool-5-thread-1] [NotificationsDao.getPriceGroupKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 18:53:53.534 [pool-5-thread-3] [NotificationsDao.getServiceClassKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:13:20.218 [pool-5-thread-2] [NotificationsDao.getServiceClassKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:13:20.233 [pool-5-thread-1] [NotificationsDao.getPriceGroupKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:13:20.233 [pool-5-thread-4] [NotificationsDao.getRatePlanKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:13:20.233 [pool-5-thread-3] [NotificationsDao.getTariffModelKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:29:59.837 [pool-5-thread-2] [NotificationsDao.getPriceGroupKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:29:59.837 [pool-5-thread-1] [NotificationsDao.getTariffModelKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:29:59.837 [pool-5-thread-3] [NotificationsDao.getRatePlanKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved
+[ERROR] 2023-01-23 19:29:59.837 [pool-5-thread-4] [NotificationsDao.getServiceClassKeys] {} - DATA-ACCESS-EXCEPTION service classes keys cannot be retrieved

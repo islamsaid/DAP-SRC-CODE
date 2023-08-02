@@ -1,0 +1,23 @@
+.add-container {
+  padding: 0px 40px 40px 40px;
+  .pgGroup-form {
+    display: inline-flex;
+    button {
+      margin-left: 40px;
+    }
+  }
+  .wrapper {
+    border: 1px solid;
+    border-color: #dfdfdf;
+    margin-top: 17px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .picklist-content {
+    margin-top: 15px;
+    .pickList-title {
+      font-weight: 600;
+      color: var(--primaryColor);
+    }
+  }
+}

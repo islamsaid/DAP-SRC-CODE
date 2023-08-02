@@ -1,0 +1,18 @@
+<app-service-form [source]="'pgGroups'" [inputs]="inputs" [isInline]="true">
+</app-service-form>
+<div class="row align pt-3 pb-3" *ngIf="enableAdd">
+  <button
+    pButton
+    class="btn btn-basic right-0"
+    type="button"
+    label="Add PG Group"
+    (click)="addPgGroup()"
+  ></button>
+</div>
+<app-services-list
+  [source]="'pgGroups'"
+  [inputs]="inputs"
+  [enableUpdate]="enableUpdate"
+  [enableDelete]="enableDelete"
+  [viewDetails]="viewDetails"
+></app-services-list>

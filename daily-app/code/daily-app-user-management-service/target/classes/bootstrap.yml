@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@10.0.20.38:1521/orclpdb'
+    username: DAILY_APP
+    password: DAILY_APP
+  cloud:
+    config:
+      uri: 'http://localhost:8888'
+      label: development-phase1
+      fail-fast: true
+  profiles:
+    active: dev
+  application:
+    name: user-management-service
+server:
+  port: '8087'
+  servlet:
+    context-path: /user-management-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
+#  session:
+#    store-type: jdbc
+

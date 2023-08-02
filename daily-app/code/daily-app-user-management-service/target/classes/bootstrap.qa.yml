@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@10.0.20.38:1521/orclpdb'
+    username: DAILY_APP_TST
+    password: DAILY_APP_TST
+    connection-timeout: 60000
+    maximum-pool-size: 30
+    minimum-idle: 1
+    max-idle-time: 30
+  cloud:
+    config:
+      uri: 'http://daily-config-server:8888'
+      label: testing-phase1
+      fail-fast: true
+  profiles:
+    active: qa
+  application:
+    name: user-management-service
+server:
+  port: '8080'
+  servlet:
+    context-path: /user-management-service
+'#spring':
+  main:
+    allow-circular-references: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
+  #  session:
+  #    store-type: jdbc

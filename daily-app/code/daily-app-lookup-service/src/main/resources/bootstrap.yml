@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@10.0.20.38:1521/orclpdb'
+    username: DAILY_APP
+    password: DAILY_APP
+  application:
+    name: lookup-service
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: 'http://localhost:8888'
+      label: development-phase1
+      fail-fast: true
+server:
+  port: '8086'
+  servlet:
+    context-path: /lookup-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false

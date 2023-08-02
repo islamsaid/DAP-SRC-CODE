@@ -1,0 +1,83 @@
+<div class="add-container">
+  <h2>{{ pageMode }} Rateplan Group</h2>
+  <form
+    autocomplete="off"
+    [formGroup]="rateplaneGroupForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="profile-form flex justify-content-between wrapper">
+      <span class="p-float-label">
+        <input
+          id="float-input"
+          type="text"
+          pInputText
+          formControlName="ratePlanGroup"
+          maxlength="50"
+        />
+        <label for="float-input"
+          >Rateplane Group Name <span class="required">*</span>
+        </label>
+      </span>
+      <span class="p-float-label">
+        <input
+          id="float-input"
+          type="text"
+          pInputText
+          formControlName="description"
+          maxlength="50"
+        />
+        <label for="float-input">Rateplane Group Describtion </label>
+      </span>
+      <span class="check">
+        <p-checkbox
+          [binary]="true"
+          [trueValue]="1"
+          [falseValue]="0"
+          formControlName="showFlag"
+        ></p-checkbox>
+        <label class="check-label">Show Flag </label>
+      </span>
+      <div>
+        <button
+          *ngIf="!viewMode"
+          pButton
+          class="btn btn-basic"
+          type="submit"
+          label="submit"
+          [disabled]="!rateplaneGroupForm.valid"
+        ></button>
+        <button
+          *ngIf="!viewMode"
+          pButton
+          pRipple
+          type="Cancel"
+          label="Cancel"
+          class="p-button-danger p-button-text white-button"
+          routerLink="/daily/rateplans/rateplansGroups"
+        ></button>
+      </div>
+    </div>
+
+    <div class="picklist-content">
+      <span class="pickList-title pt-3 pb-3"> Assign Rateplans:</span>
+      <p-pickList
+        [source]="sourceList"
+        [target]="targetList"
+        [responsive]="true"
+        sourceHeader="Unassigned Rateplans"
+        targetHeader="Assigned Rateplans"
+        [dragdrop]="true"
+        [showSourceControls]="false"
+        [showTargetControls]="false"
+        filterBy="ratePlan"
+        sourceFilterPlaceholder="Search by name"
+        targetFilterPlaceholder="Search by name"
+        [disabled]="viewMode"
+      >
+        <ng-template let-ratePlan pTemplate="item">
+          <div>{{ ratePlan?.ratePlan }}</div>
+        </ng-template>
+      </p-pickList>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,309 @@
+<p-table
+  class="table"
+  #dt
+  [value]="table.data"
+  [paginator]="table.pagination && table.data && table.data.length > 0"
+  [rows]="pageSize"
+  [loading]="loading"
+  styleClass="p-datatable-striped"
+  [globalFilterFields]="table.globalFilterFields"
+  [rowsPerPageOptions]="[5, 15, 25, 50, 100]"
+  [selectionMode]="table.name == 'transferAdjustment' ? 'multiple' : ''"
+  [(selection)]="selectedData"
+  (onSort)="sortColumn($event)"
+>
+  <ng-template pTemplate="header">
+    <tr tabIndex="-1">
+      <th
+        *ngFor="let header of table.cols"
+        pSortableColumn="{{ header.fieldId }}"
+      >
+        <div class="p-d-flex p-jc-between p-ai-center">
+          {{ header.title }}
+          <p-columnFilter
+            class="col-filter"
+            type="text"
+            field="{{ header.fieldId }}"
+            display="menu"
+          ></p-columnFilter>
+          <p-sortIcon field="{{ header.fieldId }}"></p-sortIcon>
+        </div>
+      </th>
+      <th>
+        <div class="mt-2"><span class="break">|</span></div>
+      </th>
+      <th *ngFor="let header of table.extracols">
+        <div
+          *ngIf="header.title !== 'search' && header.show"
+          class="p-d-flex p-jc-between p-ai-center"
+        >
+          <span
+            (click)="header.title == 'Export as Excel' ? exportExcel() : ''"
+            [ngClass]="header.title == 'Export as Excel' ? 'export' : ''"
+          >
+            <i
+              *ngIf="header.title == 'Export as Excel'"
+              class="pi pi-file-excel"
+              (click)="exportExcel()"
+            ></i>
+            {{ header.title }}
+          </span>
+          <span
+            class="copy"
+            (click)="copyToClipboard()"
+            *ngIf="table.name == 'transferAdjustment'"
+          >
+            <i class="pi pi-clone"></i>
+            Copy
+          </span>
+        </div>
+        <div
+          *ngIf="header.title == 'search' && header.show"
+          [ngClass]="table.name == 'transferAdjustment' ? 'align-end' : ''"
+        >
+          <div class="p-d-flex p-jc-between p-ai-center search-style">
+            <span class="p-input-icon-left p-ml-auto">
+              <i class="pi pi-search pr-5"></i>
+              <input
+                (input)="applyFilterGlobal($event, 'contains')"
+                pInputText
+                class="search-input"
+                type="text"
+                placeholder="Search..."
+                maxlength="50"
+              />
+            </span>
+          </div>
+        </div>
+      </th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-rowData let-data let-rowIndex="rowIndex">
+    <tr
+      tabIndex="-1"
+      [pSelectableRow]="data"
+      [pSelectableRowIndex]="rowIndex"
+      [ngClass]="table.name !== 'transferAdjustment' ? 'unselectable' : ''"
+    >
+      <td
+        *ngFor="let col of table.cols"
+        [ngClass]="{ 'locked-row': rowData?.lockFlag }"
+      >
+        <div
+          class="{{ col.classStyle }}"
+          [ngClass]="
+            (table.name == 'validation' || table.name == 'manualAdjustment') &&
+            rowData[col.fieldId] == 0
+              ? 'grayBG'
+              : ''
+          "
+        >
+          <span>{{
+            rowData[col.fieldId]?.name
+              ? rowData[col.fieldId].name
+              : rowData[col.fieldId]
+          }}</span>
+        </div>
+      </td>
+      <div class="mt-3"><span class="break pl-3">|</span></div>
+      <td
+        *ngFor="let col of table.extracols"
+        [ngClass]="
+          table.name == 'manualAdjustment' || table.name == 'transferAdjustment'
+            ? 'position'
+            : ''
+        "
+      >
+        <div class="lockWidth flex" *ngIf="col.fieldId == 'lockFlag'">
+          <div class="flex lock-span">
+            <i
+              class="pr-2"
+              [ngClass]="{
+                'icon-unlock': !rowData.lockFlag,
+                'icon-lock-open': rowData.lockFlag
+              }"
+            ></i
+            ><span class="pr-2" *ngIf="table.name == 'users'"
+              >{{ rowData.lockFlag ? unlockUser + "User" : lockUser + "User" }}
+            </span>
+            <span class="pr-2" *ngIf="table.name == 'profiles'"
+              >{{ rowData.isActive ? "Active" : "Not active" }}
+            </span>
+          </div>
+          {{
+            table.name == "profiles"
+              ? getFlag(rowData.isActive)
+              : getFlag(rowData.lockFlag)
+          }}
+          <p-inputSwitch
+            [(ngModel)]="lck"
+            [disabled]="!enableUpdate"
+            (onChange)="updateLockFlag(rowData)"
+          ></p-inputSwitch>
+        </div>
+        <div
+          *ngIf="
+            table.editFlag && table.deleteFlag && col.fieldId !== 'lockFlag'
+          "
+          class="flex justify-content-center"
+        >
+          <button
+            *ngIf="enableUpdate || viewDetails"
+            pButton
+            type="button"
+            class="edit-button mr-3"
+            [disabled]="rowData.lockFlag"
+            iconPos="left"
+            (click)="edit(table.name == 'users' ? rowData.userId : rowData.id)"
+          >
+            <span *ngIf="enableUpdate"> <i class="icon-edit"></i> Edit </span>
+            <span *ngIf="viewDetails && !enableUpdate">
+              <i class="icon-eye"></i> View Details
+            </span>
+          </button>
+
+          <button
+            *ngIf="table.deleteFlag && enableDelete"
+            pButton
+            type="button"
+            class="delete-button"
+            [disabled]="rowData.lockFlag"
+            iconPos="left"
+            (click)="
+              delete(
+                $event,
+                table.name == 'users' ? rowData.userId : rowData.id
+              )
+            "
+          >
+            <i class="pi pi-trash"></i> Delete
+          </button>
+        </div>
+        <div [ngClass]="table.name == 'transferAdjustment' ? 'align-end' : ''">
+          <span *ngIf="col.fieldTitle"
+            >{{ col.fieldTitle }} {{ rowData[col.fieldId] }}</span
+          >
+          <div *ngIf="col.type == 'input'">
+            <span
+              class="p-float-label"
+              [ngClass]="table.name == 'transferAdjustment' ? 'margin-b' : ''"
+            >
+              <input
+                #input
+                style="width: 16vw"
+                type="{{ col.inputType }}"
+                pInputText
+                [value]="
+                  table.name == 'manualAdjustment' ? rowData.numberOfSubs : null
+                "
+                maxlength="50"
+                max="3000"
+                [ngClass]="{ err: max }"
+                (input)="
+                  ChangeData(input, col.fieldId, col.type, rowData, rowIndex)
+                "
+                [tabIndex]="table.name == 'manualAdjustment' ? -1 : 0"
+                (keydown.Tab)="onTabInput(rowIndex)"
+                />
+              <label>{{ col.label }} </label>
+            </span>
+            <span
+              class="error"
+              [ngClass]="table.name == 'manualAdjustment' ? 'err-subs' : ''"
+              *ngIf="max && targetRow == data.ratePlanKey"
+            >
+              Out Of limit: Max Number of Subs is 3000
+            </span>
+            <span
+              class="error"
+              *ngIf="adjustNotValid && editableRowId === rowIndex"
+            >
+              *Required value
+            </span>
+          </div>
+
+          <div class="drp" *ngIf="col.type == 'dropdown'">
+            <div
+              [ngClass]="table.name == 'transferAdjustment' ? 'margin-b' : ''"
+            >
+              <p-dropdown
+                #dropdownField
+                [options]="col.data"
+                styleClass="tableDropX"
+                optionLabel="{{ col.optionLabel }}"
+                placeholder="{{ col.placeholder }} "
+                [showClear]="true"
+                (onChange)="
+                  ChangeData($event, col.fieldId, col.type, rowData, rowIndex)
+                "
+                [disabled]="
+                  (table.name == 'manualAdjustment' &&
+                    (!rowData.numberOfSubs || rowData.numberOfSubs == 0)) ||
+                  (table.name == 'validation' && rowData[col.fieldId] == 0)
+                "
+                (keydown.Tab)="onTabEvent(dropdownField,rowIndex)"
+              >
+                <ng-template
+                  *ngIf="
+                    table.name == 'validation' ||
+                    table.name == 'manualAdjustment'
+                  "
+                  let-option
+                  pTemplate="item"
+                >
+                  <div>
+                    <i *ngIf="option.value == 1" class="pi pi-arrow-up"></i>
+                    <i *ngIf="option.value == -1" class="pi pi-arrow-down"></i>
+                    <i *ngIf="option.value == 0" class="pi pi-minus"></i>
+                    <span>{{ option.trxTypeName }} </span>
+                  </div>
+                </ng-template>
+              </p-dropdown>
+            </div>
+            <span
+              class="error error-left"
+              *ngIf="rateplanNotValid && editableRowId === rowIndex"
+            >
+              *Required value
+            </span>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="emptymessage">
+    <tr tabIndex="-1">
+      <td colspan="7" style="text-align: center">No Data found.</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="paginatorright">
+    <button
+      *ngIf="table.hasSubmit && enableUpdatePatch"
+      pButton
+      class="btn btn-basic"
+      type="submit"
+      label="Submit"
+      (click)="update()"
+      [disabled]="
+        max ||
+        (table.name == 'manualAdjustment' && manualAdjustList.length == 0) ||
+        (table.name == 'validation' && aggregationList.length == 0) ||
+        (table.name == 'transferAdjustment' &&
+          (transferAdjustList.length == 0 || rateplanNotValid || adjustNotValid))
+      "
+    ></button>
+  </ng-template>
+</p-table>
+
+<app-dialog
+  [dialogConfig]="dialogConfig"
+  [openDialog]="openDialog"
+  [closeDialog]="!openDialog"
+>
+</app-dialog>
+<p-confirmDialog
+  class="confirm-dialog"
+  header="Confirmation"
+  icon="pi pi-exclamation-triangle"
+></p-confirmDialog>

@@ -1,0 +1,98 @@
+.sidebar {
+  .toggle-btn {
+    display: grid;
+    margin-top: 67px;
+    text-align: center;
+    cursor: pointer;
+    .icon-arrow-circle {
+      font-size: 15px;
+    }
+    // .toggle-state {
+    // }
+  }
+  .side-items {
+    ul {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      padding-top: 30px;
+      li {
+        a {
+          display: grid;
+          text-align: center;
+          height: 30px;
+          cursor: pointer;
+          // padding: 20px 0 20px 0;
+          .name {
+            font-size: 14px;
+          }
+        }
+
+        a.active {
+          color: var(--primaryColor);
+          .name {
+            font-weight: 600;
+          }
+        }
+
+        // a.active:after {
+        //   content: "";
+        //   position: absolute;
+        //   right: 0;
+        //   border-right: 5px solid var(--primaryColor);
+        //   border-top: 5px solid var(--primaryColor);
+        //   border-bottom: 5px solid var(--primaryColor);
+        //   border-top-left-radius: 20px;
+        //   border-bottom-left-radius: 20px;
+        //   height: 38px;
+        // }
+        .divider {
+          width: 60%;
+          margin: 20px auto 19px;
+          align-content: center;
+        }
+      }
+      li:last-child .divider {
+        display: none;
+      }
+    }
+  }
+
+  .sidebarOpen {
+    ul {
+      li {
+        a {
+          display: flex;
+          padding-left: 27px;
+          .title {
+            margin: -4px 0 0 8px;
+            font-size: 15px;
+          }
+        }
+        a.active {
+          .title {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .logout {
+    display: grid;
+    margin: 40px 0 20px 3px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .openState {
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+}
+.icon-rateplan {
+  font-size: 23px;
+}
+
+.font{
+  font-size: .77rem !important;
+}

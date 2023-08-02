@@ -1,0 +1,71 @@
+server:
+  port: 8082
+#  ssl:
+#      key-store: 
+#      key-store-alias:
+#      key-store-password:
+#      key-store-provider:
+#      key-store-type:    
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@10.0.20.38:1521/orclpdb'
+    username: DAILY_APP
+    password: DAILY_APP
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: 'http://localhost:8888'
+      label: development-phase1
+      fail-fast: true
+    application:
+      name: general
+    gateway:
+      filters:
+        - globalFilter
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+      routes:
+        - id: user-management-service
+          uri: http://localhost:8087/
+          predicates:
+            - Path=/user-management-service/**
+          filters:
+            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: lookup-service
+          uri: http://localhost:8086/
+          predicates:
+              - Path=/lookup-service/**
+          filters:
+            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: report-service
+          uri: http://localhost:8088/
+          predicates:
+              - Path=/report-service/**
+          filters:
+              - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: logging-service
+          uri: http://localhost:8881/
+          predicates:
+              - Path=/logging-service/**
+          filters:
+              - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: config-service
+          uri: http://localhost:8888/
+          predicates:
+              - Path=/config-service/**
+          filters:
+              - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE
+        - id: notification-service
+          uri: http://localhost:8089/
+          predicates:
+              - Path=/notification-service/**
+          filters:
+              - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_UNIQUE

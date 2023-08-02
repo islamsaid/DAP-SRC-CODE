@@ -1,0 +1,388 @@
+[INFO ] 2023-06-01 15:02:14.247 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:02:14.327 [main] [StartupInfoLogger.logStarting] {} - Starting BackendServiceApplication using Java 18.0.1.1 on Islam-Said with PID 28144 (E:\working_area\Project\daily-app\daily-app\code\daily-app-backend-service\target\classes started by islam.said in E:\working_area\Project\daily-app\daily-app\code\daily-app-backend-service)
+[INFO ] 2023-06-01 15:02:14.340 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "qa"
+[INFO ] 2023-06-01 15:02:16.572 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:02:16.609 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:02:17.088 [main] [GenericScope.setSerializationId] {} - BeanFactory id=7bd84be0-8a42-3098-83eb-82028e21199e
+[INFO ] 2023-06-01 15:02:20.540 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:02:20.542 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:02:20.543 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:02:20.544 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:02:20.545 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:02:20.545 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:02:20.546 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:02:20.547 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:02:20.548 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:02:20.548 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:02:20.549 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:02:20.549 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:02:20.550 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:02:20.551 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:02:23.457 [main] [NettyWebServer.start] {} - Netty started on port 8080
+[INFO ] 2023-06-01 15:02:24.590 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 11.587 seconds (JVM running for 14.571)
+[INFO ] 2023-06-01 15:04:11.706 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:04:11.799 [main] [StartupInfoLogger.logStarting] {} - Starting BackendServiceApplication using Java 18.0.1.1 on Islam-Said with PID 28800 (E:\working_area\Project\daily-app\daily-app\code\daily-app-backend-service\target\classes started by islam.said in E:\working_area\Project\daily-app\daily-app\code\daily-app-backend-service)
+[INFO ] 2023-06-01 15:04:11.805 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "qa"
+[INFO ] 2023-06-01 15:04:13.800 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:04:13.828 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:04:14.172 [main] [GenericScope.setSerializationId] {} - BeanFactory id=7bd84be0-8a42-3098-83eb-82028e21199e
+[INFO ] 2023-06-01 15:04:17.091 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:04:17.092 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:04:17.092 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:04:17.093 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:04:17.094 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:04:17.094 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:04:17.095 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:04:17.096 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:04:17.097 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:04:17.097 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:04:17.098 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:04:17.098 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:04:17.099 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:04:17.099 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:04:20.581 [main] [NettyWebServer.start] {} - Netty started on port 8080
+[INFO ] 2023-06-01 15:04:21.406 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 10.925 seconds (JVM running for 13.5)
+[INFO ] 2023-06-01 15:19:00.837 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:19:00.994 [main] [StartupInfoLogger.logStarting] {} - Starting BackendServiceApplication using Java 18.0.1.1 on Islam-Said with PID 21352 (E:\working_area\Project\daily-app\daily-app\code\daily-app-backend-service\target\classes started by islam.said in E:\working_area\Project\daily-app\daily-app\code\daily-app-backend-service)
+[INFO ] 2023-06-01 15:19:01.000 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:19:03.930 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:19:03.981 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:19:04.553 [main] [GenericScope.setSerializationId] {} - BeanFactory id=7bd84be0-8a42-3098-83eb-82028e21199e
+[INFO ] 2023-06-01 15:19:08.931 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:19:08.932 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:19:08.932 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:19:08.934 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:19:08.934 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:19:08.935 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:19:08.936 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:19:08.937 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:19:08.937 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:19:08.938 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:19:08.939 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:19:08.939 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:19:08.940 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:19:08.940 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:19:12.348 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:19:13.926 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 15.187 seconds (JVM running for 18.143)
+[DEBUG] 2023-06-01 15:21:46.914 [reactor-http-nio-3] [FakeController.storeToken] {traceId=2f9429a1-6ec0-4fd1-bd2f-0f495970664e} - ---Store Token Request Started---
+[DEBUG] 2023-06-01 15:21:46.921 [reactor-http-nio-3] [FakeController.storeToken] {} - ---Store Token Request Ended---
+[INFO ] 2023-06-01 15:26:39.412 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:26:42.053 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:26:42.516 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=application, profiles=[default], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:26:42.519 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+[INFO ] 2023-06-01 15:26:42.536 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:26:44.156 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:26:44.194 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:26:44.742 [main] [GenericScope.setSerializationId] {} - BeanFactory id=ab17c931-658f-30a7-ac59-5bf44abd32b4
+[INFO ] 2023-06-01 15:26:49.580 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:26:49.581 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:26:49.582 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:26:49.583 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:26:49.584 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:26:49.585 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:26:49.585 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:26:49.586 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:26:49.587 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:26:49.588 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:26:49.588 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:26:49.589 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:26:49.590 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:26:49.590 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:26:55.172 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:26:57.742 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 20.158 seconds (JVM running for 23.375)
+[INFO ] 2023-06-01 15:33:04.322 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[ERROR] 2023-06-01 15:33:06.443 [main] [SpringApplication.reportFailure] {} - Application run failed
+org.yaml.snakeyaml.constructor.DuplicateKeyException: while constructing a mapping
+ in 'reader', line 10, column 3:
+      datasource:
+      ^
+found duplicate key profiles
+ in 'reader', line 21, column 3:
+      profiles:
+      ^
+
+	at org.yaml.snakeyaml.constructor.SafeConstructor.processDuplicateKeys(SafeConstructor.java:105) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:76) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:189) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping2ndStep(BaseConstructor.java:480) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:190) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:174) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:139) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:128) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:86) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappbackendservice.BackendServiceApplication.main(BackendServiceApplication.java:12) ~[classes/:?]
+[INFO ] 2023-06-01 15:34:57.448 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:35:00.091 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:35:00.515 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=general, profiles=[default], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:35:00.517 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+[INFO ] 2023-06-01 15:35:00.534 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:35:02.067 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:35:02.110 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:35:02.628 [main] [GenericScope.setSerializationId] {} - BeanFactory id=348f9a46-4b76-3ed9-801f-3dfa4a39e5e6
+[INFO ] 2023-06-01 15:35:06.475 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:35:06.476 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:35:06.477 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:35:06.477 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:35:06.478 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:35:06.479 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:35:06.480 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:35:06.480 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:35:06.481 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:35:06.482 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:35:06.483 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:35:06.484 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:35:06.484 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:35:06.485 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:35:10.282 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:35:12.278 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 16.291 seconds (JVM running for 19.785)
+[INFO ] 2023-06-01 15:39:42.271 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:39:44.385 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:39:44.872 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=general, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:39:44.875 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-general-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:39:44.891 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:39:46.403 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:39:46.441 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:39:46.934 [main] [GenericScope.setSerializationId] {} - BeanFactory id=348f9a46-4b76-3ed9-801f-3dfa4a39e5e6
+[INFO ] 2023-06-01 15:39:49.965 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:39:49.966 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:39:49.967 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:39:49.967 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:39:49.968 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:39:49.968 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:39:49.969 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:39:49.970 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:39:49.970 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:39:49.971 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:39:49.971 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:39:49.972 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:39:49.972 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:39:49.973 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:39:52.526 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:39:53.377 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 12.496 seconds (JVM running for 15.325)
+[INFO ] 2023-06-01 15:42:27.777 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:42:29.757 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:42:30.234 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=general, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:42:30.236 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-general-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:42:30.259 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:42:31.676 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:42:31.711 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:42:32.143 [main] [GenericScope.setSerializationId] {} - BeanFactory id=348f9a46-4b76-3ed9-801f-3dfa4a39e5e6
+[INFO ] 2023-06-01 15:42:35.480 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:42:35.481 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:42:35.482 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:42:35.482 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:42:35.483 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:42:35.484 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:42:35.485 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:42:35.486 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:42:35.486 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:42:35.487 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:42:35.488 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:42:35.490 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:42:35.492 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:42:35.493 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:42:38.745 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:42:40.033 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 13.618 seconds (JVM running for 16.216)
+[DEBUG] 2023-06-01 15:42:43.003 [reactor-http-nio-3] [FakeController.storeToken] {traceId=598d9b7b-94ce-4067-bc26-7b474e69dc3c} - ---Store Token Request Started---
+[DEBUG] 2023-06-01 15:42:43.007 [reactor-http-nio-3] [FakeController.storeToken] {} - ---Store Token Request Ended---
+[INFO ] 2023-06-01 15:45:44.397 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:45:46.468 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:45:46.817 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=general, profiles=[default], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:45:46.819 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+[INFO ] 2023-06-01 15:45:46.834 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:45:48.044 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:45:48.078 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:45:48.534 [main] [GenericScope.setSerializationId] {} - BeanFactory id=348f9a46-4b76-3ed9-801f-3dfa4a39e5e6
+[INFO ] 2023-06-01 15:45:52.065 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:45:52.066 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:45:52.067 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:45:52.069 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:45:52.071 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:45:52.072 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:45:52.073 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:45:52.074 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:45:52.074 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:45:52.075 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:45:52.078 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:45:52.079 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:45:52.080 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:45:52.080 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:45:55.456 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:45:56.899 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 13.62 seconds (JVM running for 15.025)
+[INFO ] 2023-06-01 15:47:39.748 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:47:41.116 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:47:41.489 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=general, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:47:41.491 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-general-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-06-01 15:47:41.501 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:47:42.429 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:47:42.474 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:47:42.786 [main] [GenericScope.setSerializationId] {} - BeanFactory id=348f9a46-4b76-3ed9-801f-3dfa4a39e5e6
+[INFO ] 2023-06-01 15:47:45.316 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:47:45.316 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:47:45.317 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:47:45.318 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:47:45.319 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:47:45.320 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:47:45.320 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:47:45.321 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:47:45.322 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:47:45.322 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:47:45.323 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:47:45.324 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:47:45.324 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:47:45.326 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:47:48.015 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:47:48.986 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 10.239 seconds (JVM running for 11.6)
+[WARN ] 2023-06-01 15:50:27.536 [reactor-http-nio-5] [Loggers$Slf4JLogger.warn] {} - [66826076, L:/[0:0:0:0:0:0:0:1]:8082 - R:/[0:0:0:0:0:0:0:1]:59495] Decoding failed: DefaultFullHttpRequest(decodeResult: failure(java.lang.IllegalArgumentException: invalid version format: ÀÀ), version: HTTP/1.0, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /bad-request HTTP/1.0 : 
+java.lang.IllegalArgumentException: invalid version format: ÀÀ
+	at io.netty.handler.codec.http.HttpVersion.<init>(HttpVersion.java:116) ~[netty-codec-http-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.http.HttpVersion.valueOf(HttpVersion.java:78) ~[netty-codec-http-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.http.HttpRequestDecoder.createMessage(HttpRequestDecoder.java:124) ~[netty-codec-http-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:273) ~[netty-codec-http-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.http.HttpServerCodec$HttpServerRequestDecoder.decode(HttpServerCodec.java:140) ~[netty-codec-http-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510) ~[netty-codec-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449) ~[netty-codec-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279) ~[netty-codec-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[INFO ] 2023-06-01 15:56:25.039 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[ERROR] 2023-06-01 15:56:26.473 [main] [SpringApplication.reportFailure] {} - Application run failed
+org.yaml.snakeyaml.constructor.DuplicateKeyException: while constructing a mapping
+ in 'reader', line 10, column 3:
+      datasource:
+      ^
+found duplicate key profiles
+ in 'reader', line 21, column 3:
+      profiles:
+      ^
+
+	at org.yaml.snakeyaml.constructor.SafeConstructor.processDuplicateKeys(SafeConstructor.java:105) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.flattenMapping(SafeConstructor.java:76) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:189) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping2ndStep(BaseConstructor.java:480) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:190) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:461) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:556) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObjectNoCheck(BaseConstructor.java:230) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:220) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.constructObject(OriginTrackedYamlLoader.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:174) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:139) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514) ~[snakeyaml-1.30.jar:?]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:128) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:86) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappbackendservice.BackendServiceApplication.main(BackendServiceApplication.java:12) ~[classes/:?]
+[INFO ] 2023-06-01 15:57:49.618 [background-preinit] [Version.<clinit>] {} - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2023-06-01 15:57:51.669 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-06-01 15:57:52.031 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=general, profiles=[default], label=development-phase1, version=null, state=null
+[INFO ] 2023-06-01 15:57:52.032 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+[INFO ] 2023-06-01 15:57:52.045 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-06-01 15:57:53.294 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2023-06-01 15:57:53.334 [main] [RepositoryConfigurationDelegate.registerRepositoriesIn] {} - Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+[INFO ] 2023-06-01 15:57:53.766 [main] [GenericScope.setSerializationId] {} - BeanFactory id=348f9a46-4b76-3ed9-801f-3dfa4a39e5e6
+[INFO ] 2023-06-01 15:57:57.054 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [After]
+[INFO ] 2023-06-01 15:57:57.055 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Before]
+[INFO ] 2023-06-01 15:57:57.055 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Between]
+[INFO ] 2023-06-01 15:57:57.056 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2023-06-01 15:57:57.057 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Header]
+[INFO ] 2023-06-01 15:57:57.058 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Host]
+[INFO ] 2023-06-01 15:57:57.059 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Method]
+[INFO ] 2023-06-01 15:57:57.060 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Path]
+[INFO ] 2023-06-01 15:57:57.061 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Query]
+[INFO ] 2023-06-01 15:57:57.061 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2023-06-01 15:57:57.062 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2023-06-01 15:57:57.063 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2023-06-01 15:57:57.063 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2023-06-01 15:57:57.064 [main] [RouteDefinitionRouteLocator.lambda$initFactories$1] {} - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2023-06-01 15:57:59.985 [main] [NettyWebServer.start] {} - Netty started on port 8082
+[INFO ] 2023-06-01 15:58:01.218 [main] [StartupInfoLogger.logStarted] {} - Started BackendServiceApplication in 12.929 seconds (JVM running for 15.052)

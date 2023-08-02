@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  height: 100vh;
+  app-sidebar {
+    flex: 6%;
+    background-color: var(--lightGray);
+    position: relative;
+    padding-bottom: 25px;
+  }
+  .stateOpen {
+    flex: 20%;
+  }
+  .main-content {
+    flex: 94%;
+    overflow: overlay;
+  }
+  .sidebarActive {
+    flex: 80%;
+  }
+}
+app-sidebar{
+  overflow: overlay !important;
+
+}

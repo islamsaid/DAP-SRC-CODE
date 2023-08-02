@@ -1,0 +1,66 @@
+<div class="add-container">
+  <h2>{{ pageMode }} PG Group</h2>
+  <form autocomplete="off" [formGroup]="pgGroupForm" (ngSubmit)="onSubmit()">
+    <div class="pgGroup-form flex justify-content-between wrapper">
+      <span class="p-float-label">
+        <input
+          id="float-input"
+          type="text"
+          pInputText
+          formControlName="pgGroup"
+        />
+        <label for="float-input"
+          >PG Group <span class="required">*</span>
+        </label>
+      </span>
+      <span class="p-float-label">
+        <input
+          id="float-input"
+          type="text"
+          pInputText
+          formControlName="description"
+           maxlength="50"
+        />
+        <label for="float-input">Description </label>
+      </span>
+      <span class="check">
+        <p-checkbox
+          [binary]="true"
+          [trueValue]="1"
+          [falseValue]="0"
+          formControlName="showFlag"
+        ></p-checkbox>
+        <label class="check-label"> show Flag</label>
+      </span>
+      <button
+        *ngIf="!viewMode"
+        pButton
+        class="btn btn-basic"
+        type="submit"
+        label="submit"
+        [disabled]="!pgGroupForm.valid"
+      ></button>
+    </div>
+    <div class="picklist-content">
+      <span class="pickList-title"> Assign Price Groups:</span>
+      <p-pickList
+        [source]="sourceList"
+        [target]="targetList"
+        [responsive]="true"
+        sourceHeader="Unassigned"
+        targetHeader="Assigned"
+        [dragdrop]="true"
+        [showSourceControls]="false"
+        [showTargetControls]="false"
+        filterBy="name"
+        sourceFilterPlaceholder="Search by name"
+        targetFilterPlaceholder="Search by name"
+        [disabled]="viewMode"
+      >
+        <ng-template let-priceGroup pTemplate="item">
+          <div>{{ priceGroup.priceGroup }}</div>
+        </ng-template>
+      </p-pickList>
+    </div>
+  </form>
+</div>

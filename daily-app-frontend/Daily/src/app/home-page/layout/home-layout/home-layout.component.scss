@@ -1,0 +1,17 @@
+$headerFontSize: 17px;
+$headerFontStrech: normal normal normal bold 17px/17px Cairo;
+.header {
+  .icon-chart {
+    color: #142645b3;
+    padding-right: 10px;
+    font-size: $headerFontSize;
+    padding-top: 1px;
+    font-weight: bold;
+  }
+
+  .text {
+    color: var(--lightBlack);
+    font: $headerFontStrech;
+    letter-spacing: 1.25px;
+  }
+}

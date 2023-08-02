@@ -1,0 +1,49 @@
+<form autocomplete="off" [formGroup]="systemConfigForm" (ngSubmit)="submit()">
+  <div class="row mt-2 mb-3 flex justify-content-end">
+    <button
+      *ngIf="enableUpdate"
+      pButton
+      class="btn btn-basic mr-3"
+      type="submit"
+      label="Submit"
+    ></button>
+  </div>
+  <p-accordion [multiple]="true">
+    <p-accordionTab
+      *ngFor="let item of systemConfigs | keyvalue"
+      header="{{ item.key.toLocaleUpperCase() }}"
+    >
+      <div>
+        <div *ngFor="let elem of item.value" class="inline-block">
+          <span *ngIf="elem.code !== 'ACCESS_TOKEN_KEY'">
+          <span *ngIf="elem.type == 2" class="p-float-label mt-4 mr-7">
+            <input
+              id="{{ elem.label }}"
+              style="width: 22vw"
+              type="text"
+              pInputText
+              maxlength="50"
+              #input
+              formControlName="{{ elem.code }}"
+              (input)="changeDetected(input.value, elem, item.key)"
+            />
+            <label for="{{ elem.label }}">{{ elem.description }} </label>
+          </span>
+          <span *ngIf="elem.type == 1" class="check mt-4 mr-7">
+            <p-checkbox
+              class="pr-2"
+              [binary]="true"
+              [trueValue]="1"
+              [falseValue]="0"
+              #check
+              (onChange)="changeDetected(check.model, elem, item.key)"
+              formControlName="{{ elem.code }}"
+            ></p-checkbox>
+            <label class="check-label">{{ elem.description }} </label>
+          </span>
+        </span>
+        </div>
+      </div>
+    </p-accordionTab>
+  </p-accordion>
+</form>

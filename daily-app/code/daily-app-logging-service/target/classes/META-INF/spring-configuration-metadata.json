@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "com.asset.loggingService.cache.CacheMessages",
+      "sourceType": "com.asset.loggingService.cache.CacheMessages"
+    },
+    {
+      "name": "",
+      "type": "com.asset.loggingService.cache.PropertiesCache",
+      "sourceType": "com.asset.loggingService.cache.PropertiesCache"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cache-messages",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.Integer,java.lang.String>>",
+      "sourceType": "com.asset.loggingService.cache.CacheMessages"
+    },
+    {
+      "name": "max-number-of-retries",
+      "type": "java.lang.Integer",
+      "sourceType": "com.asset.loggingService.cache.PropertiesCache"
+    },
+    {
+      "name": "refresh-rate-for-caching",
+      "type": "java.lang.String",
+      "sourceType": "com.asset.loggingService.cache.PropertiesCache"
+    },
+    {
+      "name": "rolling-pool-properties",
+      "type": "com.asset.loggingService.cache.RollingPoolProperties",
+      "sourceType": "com.asset.loggingService.cache.PropertiesCache"
+    }
+  ],
+  "hints": []
+}

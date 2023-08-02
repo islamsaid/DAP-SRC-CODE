@@ -1,0 +1,95 @@
+.login-form {
+    width: 363px;
+    height: 423px;
+    padding: 33px;
+    //   background-color: white;
+    background-image: linear-gradient(var(--white), rgba(255, 255, 255, 0.171));
+    border: 1px solid var(--white);
+    border-radius: 41px 41px 41px 41px;
+    font-family: DIN Next LT Arabic;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.form-header {
+  margin-top: 15px;
+  // padding-bottom: 35px;
+  // background: transparent url("./assets/images/icons/Path\ 81.svg") no-repeat;
+  background-position: bottom;
+}
+
+.label {
+    color: var(--darkBlue);
+    font: normal normal normal 15px/15px DIN Next LT Arabic;
+    font-weight: bold;
+}
+
+.login-input {
+    left: 1234px;
+    width: 300px;
+    height: 38px;
+    padding-left: 2.8em;
+    background: #f8f8f8 no-repeat padding-box;
+    box-shadow: 4px 7px 8px #7172733b;
+    border-radius: 10px;
+    border-style: hidden;
+    &:focus {
+        border-style: hidden;
+        outline: none;
+    }
+}
+
+.login-button {
+    left: 1234px;
+    width: 300px;
+    height: 34px;
+    box-shadow: 4px 7px 8px #7172733b;
+    border-radius: 10px;
+    border-style: hidden;
+    color: white;
+    font-size: medium;
+    &:focus {
+        border-style: hidden;
+        outline: none;
+    }
+    cursor: pointer;
+}
+
+.login-active {
+    background: var(--primaryColor) no-repeat;
+    &:hover {
+        background: var(--darkRed) no-repeat;
+    }
+}
+
+.icon {
+    font-size: 18px;
+    position: absolute;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.eye {
+    margin-left: 14.5em;
+    margin-top: 1.4em;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.icon-margin {
+    margin-top: 1.4em;
+    margin-left: 0.6em;
+}
+
+@media only screen and (max-width: 768) {
+    .login-form {
+        font-size: 5px !important;
+    }
+}

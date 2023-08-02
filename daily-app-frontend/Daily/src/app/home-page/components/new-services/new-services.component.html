@@ -1,0 +1,51 @@
+<div class="row flex header" *ngIf="viewClasses || viewTariffs">
+  <div class="col-7 flex pt-4">
+    <span class="icon-services head-icon"></span>
+    <span class="text">New Service Classes / Tariffs</span>
+  </div>
+</div>
+<div class="services-container">
+  <div class="tab-sec">
+    <p-tabMenu [model]="items" [activeItem]="activeItem"> </p-tabMenu>
+  </div>
+  <p-table
+    class="table-font-style dashboard-pg"
+    [paginator]="data && data.length > 0"
+    [totalRecords]="data.length"
+    [rows]="pageSize"
+    [value]="data"
+    responsiveLayout="scroll"
+  >
+    <ng-template pTemplate="header"></ng-template>
+    <ng-template pTemplate="body" let-item let-rowIndex="rowIndex">
+      <tr>
+        <td class="left-border">
+          <i class="icon-flag"></i>
+          {{ item.name }}
+        </td>
+        <td class="right-border" style="text-align: right">
+          {{ item.date == 0 ? "Today" : item.date + " Day Ago" }}
+        </td>
+      </tr>
+      <p></p>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+      <tr>
+        <td colspan="7" style="text-align: center">No Data found.</td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+      <button
+        pButton
+        class="btn btn-basic"
+        type="button"
+        label="See All"
+        [routerLink]="
+          activeItem.label == 'Service Classes'
+            ? '/daily/services/classes'
+            : '/daily/services/tariffs'
+        "
+      ></button>
+    </ng-template>
+  </p-table>
+</div>

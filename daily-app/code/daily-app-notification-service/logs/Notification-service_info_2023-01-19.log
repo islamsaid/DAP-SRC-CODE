@@ -1,0 +1,1114 @@
+[INFO ] 2023-01-19 19:00:39.241 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:00:40.415 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:00:40.480 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:01:37.666 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:01:38.823 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:01:38.885 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:02:16.531 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:02:17.681 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:02:17.736 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:03:13.128 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:03:14.284 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:03:14.327 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:04:11.767 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://daily-config-server:8888
+[INFO ] 2023-01-19 19:04:12.922 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://daily-config-server:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:04:12.973 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://daily-config-server:8888/notification-service/qa/testing-phase1": daily-config-server; nested exception is java.net.UnknownHostException: daily-config-server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.UnknownHostException: daily-config-server
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:04:51.105 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://localhost:8888
+[INFO ] 2023-01-19 19:04:51.219 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+[ERROR] 2023-01-19 19:04:51.243 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/notification-service/dev/development-phase1": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:06:24.045 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:06:24.279 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:06:24.280 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:06:24.289 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:06:25.636 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:06:26.195 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:06:26.207 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:06:26.208 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:06:26.209 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:06:26.419 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:06:26.420 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2111 ms
+[INFO ] 2023-01-19 19:06:29.751 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:06:29.809 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:06:29.865 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:06:29.904 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:06:31.271 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:06:31.328 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 11.105 seconds (JVM running for 12.13)
+[INFO ] 2023-01-19 19:06:31.342 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:06:31.342 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@78e043e4]
+[INFO ] 2023-01-19 19:06:31.342 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:06:33.459 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:06:37.824 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:07:13.787 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:07:16.181 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:07:17.314 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:07:17.316 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:07:18.211 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:07:18.213 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:07:22.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:07:23.137 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:07:23.139 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:07:24.057 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:07:24.059 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:07:25.075 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:07:27.115 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:07:32.215 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:07:42.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:07:52.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:08:02.215 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:08:12.215 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:08:22.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:08:32.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:08:42.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:08:52.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:09:02.215 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:09:12.217 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:09:22.217 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:09:32.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:09:42.215 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:09:52.215 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:10:02.217 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:10:12.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:10:22.217 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:10:32.218 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:10:42.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:10:52.215 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:11:02.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:11:12.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:11:22.218 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:11:32.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:11:42.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:11:52.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:12:02.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:12:12.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:12:22.216 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:12:32.217 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:13:20.292 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:13:22.579 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://10.0.20.41:7070. Will be trying the next url if available
+[ERROR] 2023-01-19 19:13:22.614 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://10.0.20.41:7070/notification-service/dev/development-phase1": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:13:53.084 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:13:55.359 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Connect Timeout Exception on Url - http://10.0.20.41:7070. Will be trying the next url if available
+[ERROR] 2023-01-19 19:13:55.414 [main] [SpringApplication.reportFailure] {} - Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:148) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:160) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95) ~[spring-cloud-context-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:607) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.asset.dailyappnotificationservice.DailyAppNotificationServiceApplication.main(DailyAppNotificationServiceApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://10.0.20.41:7070/notification-service/dev/development-phase1": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602) ~[spring-web-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:255) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:109) ~[spring-cloud-config-client-3.1.2.jar:3.1.2]
+	... 9 more
+[INFO ] 2023-01-19 19:15:18.495 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:15:18.782 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:15:18.783 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:15:18.794 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:15:20.065 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:15:20.658 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:15:20.668 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:15:20.669 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:15:20.670 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:15:20.844 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:15:20.845 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2038 ms
+[INFO ] 2023-01-19 19:15:23.581 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:15:23.621 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:15:23.676 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:15:23.709 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:15:25.062 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:15:25.118 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.308 seconds (JVM running for 11.26)
+[INFO ] 2023-01-19 19:15:25.126 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:15:25.127 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@5f3ddc86]
+[INFO ] 2023-01-19 19:15:25.127 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:15:26.532 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:15:29.703 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:15:29.956 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:15:29.956 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:15:29.957 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:15:29.958 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:15:29.958 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:15:29.959 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:15:29.960 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:15:29.960 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:15:29.961 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:15:29.962 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:15:29.962 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:15:29.962 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:15:39.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:15:49.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:15:55.086 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:15:55.088 [pool-5-thread-1] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 844765985
+[INFO ] 2023-01-19 19:15:59.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:16:00.045 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:16:09.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:16:19.959 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:16:29.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:16:39.956 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:16:49.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:16:59.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:17:09.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:17:19.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:17:29.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:17:39.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:17:49.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:17:59.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:18:09.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:18:10.093 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - repeated checksum
+[INFO ] 2023-01-19 19:18:19.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:18:29.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:18:39.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:18:49.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:18:56.088 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:18:56.089 [pool-5-thread-1] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 725690976
+[INFO ] 2023-01-19 19:18:59.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:19:00.067 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:19:02.651 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:19:09.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:19:19.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:19:29.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:19:39.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:19:41.885 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:19:49.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:19:59.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:20:09.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:20:19.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:20:29.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:20:34.884 [4-campaign[Camp1]-dequeuer-2] [EmailDequeuerHandler.dequeue] {dequeuerId=1} - Dequeued
+[INFO ] 2023-01-19 19:20:39.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:20:49.959 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:20:59.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:21:09.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:21:19.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:21:29.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:21:39.959 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:21:49.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:21:59.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:22:09.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:22:19.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:22:29.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:22:39.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:22:49.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:22:59.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:23:09.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:23:19.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:23:29.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:23:39.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:23:49.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:23:59.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:24:09.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:24:19.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:24:29.959 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:24:39.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:24:49.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:24:59.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:25:09.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:25:19.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:25:29.957 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:25:39.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:25:49.958 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:26:05.757 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:26:05.967 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:26:05.969 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:26:05.976 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:26:07.306 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:26:07.878 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:26:07.891 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:26:07.892 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:26:07.892 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:26:08.130 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:26:08.131 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2136 ms
+[INFO ] 2023-01-19 19:26:11.147 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:26:11.202 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:26:11.275 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:26:11.361 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:26:12.739 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:26:12.765 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.706 seconds (JVM running for 11.705)
+[INFO ] 2023-01-19 19:26:12.777 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:26:12.777 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@38e46765]
+[INFO ] 2023-01-19 19:26:12.778 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:26:14.205 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:26:42.072 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:26:42.160 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:26:42.161 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:26:42.161 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:26:42.162 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:26:42.163 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:26:42.163 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:26:42.164 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:26:42.164 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:26:42.165 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:26:42.165 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:26:42.165 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:26:42.166 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:26:52.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:27:02.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:27:12.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:27:17.286 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:27:17.287 [pool-5-thread-3] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 844765985
+[INFO ] 2023-01-19 19:27:22.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:27:24.058 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:27:25.927 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:27:25.928 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:27:29.430 [4-campaign[Camp1]-dequeuer-1] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:27:32.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:27:42.161 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:27:52.161 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:28:02.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:28:12.161 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:28:22.161 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:28:32.161 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:28:42.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:28:52.162 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:29:10.990 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:29:11.245 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:29:11.246 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:29:11.260 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:29:12.562 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:29:13.071 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:29:13.082 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:29:13.083 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:29:13.083 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:29:13.277 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:29:13.278 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 1992 ms
+[INFO ] 2023-01-19 19:29:15.991 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:29:16.043 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:29:16.106 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:29:16.150 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:29:17.515 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:29:17.564 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 10.3 seconds (JVM running for 11.272)
+[INFO ] 2023-01-19 19:29:17.581 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:29:17.581 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@5f3ddc86]
+[INFO ] 2023-01-19 19:29:17.582 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:29:18.990 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:29:20.567 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:29:20.663 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:29:20.664 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:29:20.665 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:29:20.665 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:29:20.666 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:29:20.667 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:29:20.668 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:29:20.668 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:29:20.669 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:29:20.670 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:29:20.671 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:29:20.671 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:29:30.666 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:29:40.664 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:29:50.664 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:30:00.667 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:30:10.664 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:30:20.666 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:30:30.665 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:30:37.793 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:30:37.798 [pool-5-thread-3] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 725690976
+[INFO ] 2023-01-19 19:30:40.664 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:30:40.797 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:30:41.421 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:30:41.422 [pool-5-thread-3] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:30:43.440 [4-campaign[Camp1]-dequeuer-1] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:30:50.664 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:31:00.666 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:31:10.666 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:31:20.666 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:31:30.665 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:31:40.664 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:31:50.665 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:32:00.665 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:32:26.297 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:32:26.536 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:32:26.538 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:32:26.545 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:32:28.060 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:32:28.730 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:32:28.746 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:32:28.747 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:32:28.748 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:32:28.998 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:32:28.998 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2434 ms
+[INFO ] 2023-01-19 19:32:32.024 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:32:32.067 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:32:32.144 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:32:32.192 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:32:33.608 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:32:33.628 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 11.359 seconds (JVM running for 12.544)
+[INFO ] 2023-01-19 19:32:33.638 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:32:33.639 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@38e46765]
+[INFO ] 2023-01-19 19:32:33.639 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:32:35.062 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:32:36.903 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:32:37.009 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:32:37.009 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:32:37.011 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:32:37.011 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:32:37.013 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:32:37.014 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:32:37.015 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:32:37.015 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:32:37.016 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:32:37.017 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:32:37.017 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:32:37.018 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:32:47.011 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:32:57.012 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:33:07.010 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:33:17.010 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:33:27.010 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:33:27.133 [pool-5-thread-2] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:33:27.135 [pool-5-thread-2] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 7109027
+[INFO ] 2023-01-19 19:33:29.209 [pool-5-thread-2] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:33:29.945 [pool-5-thread-2] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:33:29.946 [pool-5-thread-2] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:33:32.051 [4-campaign[Camp1]-dequeuer-1] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:33:37.011 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:33:47.012 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:33:57.013 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:34:07.011 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:34:17.011 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:34:27.010 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:34:37.012 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:34:47.012 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:35:09.194 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:35:09.440 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:35:09.441 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:35:09.453 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:35:11.280 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:35:12.001 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:35:12.018 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:35:12.019 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:35:12.020 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:35:12.354 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:35:12.355 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2875 ms
+[INFO ] 2023-01-19 19:35:15.753 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:35:15.791 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:35:15.874 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:35:15.933 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:35:17.519 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:35:17.545 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.778 seconds (JVM running for 14.063)
+[INFO ] 2023-01-19 19:35:17.559 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:35:17.559 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@192f5f39]
+[INFO ] 2023-01-19 19:35:17.560 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:35:19.247 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:35:20.313 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:35:20.441 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:35:20.442 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:35:20.444 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:35:20.446 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:35:20.448 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:35:20.449 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:35:20.450 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:35:20.451 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:35:20.453 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:35:20.454 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:35:20.454 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:35:20.454 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:35:30.444 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:35:40.444 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:35:46.573 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:35:46.574 [pool-5-thread-1] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 427247842
+[INFO ] 2023-01-19 19:35:48.581 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:35:49.148 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:35:49.149 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:35:50.445 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:35:51.232 [4-campaign[Camp1]-dequeuer-2] [EmailDequeuerHandler.dequeue] {dequeuerId=1} - Dequeued
+[INFO ] 2023-01-19 19:36:00.445 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:36:10.446 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:36:20.445 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:36:30.444 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:36:40.445 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:36:50.445 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:37:38.154 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:37:38.386 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:37:38.386 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:37:38.395 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:37:39.998 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:37:40.681 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:37:40.697 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:37:40.698 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:37:40.700 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:37:40.996 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:37:40.997 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2575 ms
+[INFO ] 2023-01-19 19:37:44.597 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:37:44.655 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:37:44.733 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:37:44.783 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:37:46.295 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:37:46.320 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.328 seconds (JVM running for 13.613)
+[INFO ] 2023-01-19 19:37:46.329 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:37:46.330 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@38e46765]
+[INFO ] 2023-01-19 19:37:46.330 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:37:48.061 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:37:50.503 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:37:50.627 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:37:50.627 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:37:50.628 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:37:50.629 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:37:50.631 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:37:50.632 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:37:50.634 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:37:50.635 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:37:50.636 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:37:50.637 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:37:50.637 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:37:50.638 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:38:00.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:38:10.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:38:15.766 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:38:15.767 [pool-5-thread-1] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 2666484781
+[INFO ] 2023-01-19 19:38:19.971 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:38:20.628 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:38:20.643 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:38:20.644 [pool-5-thread-1] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:38:23.153 [4-campaign[Camp1]-dequeuer-1] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:38:30.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:38:40.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:38:50.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:39:00.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:39:10.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:39:20.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:39:30.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:39:40.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:39:50.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:40:00.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:40:10.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:40:20.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:40:30.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:40:40.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:40:50.631 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:41:00.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:41:10.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:41:20.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:41:30.631 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:41:31.793 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:41:31.793 [pool-5-thread-4] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 2280940908
+[INFO ] 2023-01-19 19:41:38.634 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:41:40.561 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:41:40.562 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:41:40.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:41:50.631 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:42:00.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:42:10.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:42:20.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:42:30.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:42:40.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:42:50.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:43:00.631 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:43:10.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:43:12.272 [4-campaign[Camp1]-dequeuer-1] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:43:20.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:43:30.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:43:40.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:43:50.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:45:32.318 [main] [ConfigServicePropertySourceLocator.getRemoteEnvironment] {} - Fetching config from server at : http://10.0.20.41:7070
+[INFO ] 2023-01-19 19:45:32.569 [main] [ConfigServicePropertySourceLocator.log] {} - Located environment: name=notification-service, profiles=[dev], label=development-phase1, version=null, state=null
+[INFO ] 2023-01-19 19:45:32.570 [main] [PropertySourceBootstrapConfiguration.initialize] {} - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-notification-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-application-dev'}]
+[INFO ] 2023-01-19 19:45:32.580 [main] [SpringApplication.logStartupProfileInfo] {} - The following 1 profile is active: "dev"
+[INFO ] 2023-01-19 19:45:34.229 [main] [GenericScope.setSerializationId] {} - BeanFactory id=8dda744a-791c-3e1c-9bdd-a0d0cf76a10b
+[INFO ] 2023-01-19 19:45:34.918 [main] [TomcatWebServer.initialize] {} - Tomcat initialized with port(s): 8089 (http)
+[INFO ] 2023-01-19 19:45:34.932 [main] [DirectJDKLog.log] {} - Initializing ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:45:34.933 [main] [DirectJDKLog.log] {} - Starting service [Tomcat]
+[INFO ] 2023-01-19 19:45:34.934 [main] [DirectJDKLog.log] {} - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2023-01-19 19:45:35.198 [main] [DirectJDKLog.log] {} - Initializing Spring embedded WebApplicationContext
+[INFO ] 2023-01-19 19:45:35.199 [main] [ServletWebServerApplicationContext.prepareWebApplicationContext] {} - Root WebApplicationContext: initialization completed in 2596 ms
+[INFO ] 2023-01-19 19:45:38.493 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:45:38.533 [main] [EndpointLinksResolver.<init>] {} - Exposing 15 endpoint(s) beneath base path '/actuator'
+[INFO ] 2023-01-19 19:45:38.606 [main] [DirectJDKLog.log] {} - Starting ProtocolHandler ["http-nio-8089"]
+[INFO ] 2023-01-19 19:45:38.653 [main] [TomcatWebServer.start] {} - Tomcat started on port(s): 8089 (http) with context path '/notification-service'
+[INFO ] 2023-01-19 19:45:40.134 [main] [InetUtils.convertAddress] {} - Cannot determine local hostname
+[INFO ] 2023-01-19 19:45:40.160 [main] [StartupInfoLogger.logStarted] {} - Started DailyAppNotificationServiceApplication in 12.367 seconds (JVM running for 13.756)
+[INFO ] 2023-01-19 19:45:40.173 [main] [EventManager.handleContextStarted] {} - -------------------------------Start handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:45:40.173 [main] [EventManager.handleContextStarted] {} - Application started event received: org.springframework.boot.context.event.ApplicationStartedEvent[source=org.springframework.boot.SpringApplication@38e46765]
+[INFO ] 2023-01-19 19:45:40.174 [Event-Manager] [EventManager.handleContextStarted] {} - Start loading Configurations...
+[INFO ] 2023-01-19 19:45:42.055 [Event-Manager] [EventManager.handleContextStarted] {} - End loading Configurations
+[INFO ] 2023-01-19 19:45:47.508 [Event-Manager] [EventManager.handleContextStarted] {} - Start email broker...
+[INFO ] 2023-01-19 19:45:47.617 [Event-Manager] [EventManager.handleContextStarted] {} - End email broker ...
+[INFO ] 2023-01-19 19:45:47.618 [Event-Manager] [EventManager.handleContextStarted] {} - Start scheduling notification
+[INFO ] 2023-01-19 19:45:47.619 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:45:47.620 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:45:47.621 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:45:47.621 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:45:47.622 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:45:47.623 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:45:47.624 [Event-Manager] [NotificationsManager.submitTask] {} - Start submitting Task
+[INFO ] 2023-01-19 19:45:47.625 [Event-Manager] [NotificationsManager.submitTask] {} - End submitting Task
+[INFO ] 2023-01-19 19:45:47.625 [Event-Manager] [EventManager.handleContextStarted] {} - End scheduling notification
+[INFO ] 2023-01-19 19:45:47.626 [Event-Manager] [EventManager.handleContextStarted] {} - -------------------------------End handleContextStarted-------------------------------
+[INFO ] 2023-01-19 19:45:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:46:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:46:17.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:46:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:46:29.773 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - Adding new service class notification...
+[INFO ] 2023-01-19 19:46:29.775 [pool-5-thread-4] [ServiceClassNotificationsTask.setNotification] {} - ----------> SC checksum = 1475654674
+[INFO ] 2023-01-19 19:46:31.939 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:46:32.686 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:46:32.687 [pool-5-thread-4] [ServiceClassNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:46:34.465 [4-campaign[Camp1]-dequeuer-2] [EmailDequeuerHandler.dequeue] {dequeuerId=1} - Dequeued
+[INFO ] 2023-01-19 19:46:37.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:46:47.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:46:57.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:47:07.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:47:17.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:47:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:47:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:47:47.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:47:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:48:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:48:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:48:27.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:48:37.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:48:47.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:48:57.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:49:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:49:17.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:49:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:49:32.712 [pool-5-thread-3] [TariffModelNotificationsTask.setNotification] {} - ----------> TM checksum = 2786290727
+[INFO ] 2023-01-19 19:49:32.713 [pool-5-thread-3] [TariffModelNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:49:32.747 [pool-5-thread-3] [TariffModelNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:49:32.748 [pool-5-thread-3] [TariffModelNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:49:35.649 [4-campaign[Camp1]-dequeuer-2] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:49:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:49:47.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:49:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:50:07.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:50:17.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:50:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:50:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:50:42.714 [pool-5-thread-3] [PriceGroupNotificationsTask.setNotification] {} - ----------> PG checksum = 3012211456
+[INFO ] 2023-01-19 19:50:42.714 [pool-5-thread-3] [PriceGroupNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:50:42.745 [pool-5-thread-3] [PriceGroupNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:50:42.745 [pool-5-thread-3] [PriceGroupNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:50:45.502 [4-campaign[Camp1]-dequeuer-2] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:50:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:50:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:51:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:51:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:51:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:51:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:51:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:51:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:52:07.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:52:17.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:52:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:52:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:52:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:52:55.717 [pool-5-thread-4] [RatePlanNotificationsTask.setNotification] {} - ----------> RP checksum = 1817357032
+[INFO ] 2023-01-19 19:52:55.717 [pool-5-thread-4] [RatePlanNotificationsTask.run] {} - check notification uniqueness...
+[INFO ] 2023-01-19 19:52:55.751 [pool-5-thread-4] [RatePlanNotificationsTask.run] {} - -----notification----
+[INFO ] 2023-01-19 19:52:55.751 [pool-5-thread-4] [RatePlanNotificationsTask.run] {} - sending a notification with email
+[INFO ] 2023-01-19 19:52:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:52:58.323 [4-campaign[Camp1]-dequeuer-2] [EmailDequeuerHandler.dequeue] {dequeuerId=0} - Dequeued
+[INFO ] 2023-01-19 19:53:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:53:17.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:53:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:53:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:53:47.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:53:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:54:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:54:17.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:54:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:54:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:54:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:54:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:55:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:55:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:55:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:55:37.619 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:55:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:55:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:56:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:56:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:56:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:56:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:56:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:56:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:57:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:57:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:57:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:57:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:57:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:57:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:58:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:58:17.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:58:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:58:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:58:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:58:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:59:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:59:17.625 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:59:27.632 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:59:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:59:47.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 19:59:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:00:07.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:00:17.624 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:00:27.626 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:00:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:00:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:00:57.628 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:01:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:01:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:01:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:01:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:01:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:01:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:02:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:02:17.631 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:02:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:02:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:02:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:02:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:03:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:03:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:03:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:03:37.635 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:03:47.632 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:03:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:04:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:04:17.631 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:04:27.623 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:04:37.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:04:47.624 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:04:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:05:07.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:05:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:05:27.628 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:05:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:05:47.631 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:05:57.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:06:07.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:06:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:06:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:06:37.623 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:06:47.623 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:06:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:07:07.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:07:17.634 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:07:27.626 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:07:37.633 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:07:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:07:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:08:07.625 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:08:17.625 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:08:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:08:37.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:08:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:08:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:09:07.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:09:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:09:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:09:37.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:09:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:09:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:10:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:10:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:10:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:10:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:10:47.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:10:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:11:07.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:11:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:11:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:11:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:11:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:11:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:12:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:12:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:12:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:12:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:12:47.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:12:57.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:13:07.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:13:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:13:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:13:37.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:13:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:13:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:14:07.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:14:17.623 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:14:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:14:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:14:47.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:14:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:15:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:15:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:15:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:15:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:15:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:15:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:16:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:16:17.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:16:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:16:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:16:47.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:16:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:17:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:17:17.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:17:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:17:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:17:47.623 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:17:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:18:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:18:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:18:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:18:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:18:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:18:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:19:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:19:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:19:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:19:37.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:19:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:19:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:20:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:20:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:20:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:20:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:20:47.623 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:20:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:21:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:21:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:21:27.629 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:21:37.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:21:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:21:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:22:07.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:22:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:22:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:22:37.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:22:47.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:22:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:23:07.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:23:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:23:27.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:23:37.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:23:47.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:23:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:24:07.635 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:24:17.630 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:24:27.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:24:37.625 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:24:47.634 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:24:57.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:25:07.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:25:17.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:25:27.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:25:37.620 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:25:47.621 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
+[INFO ] 2023-01-19 20:25:57.622 [2-campaign[Camp1]-refresh Thread-1] [EmailMonitorTask.run] {} - Camp1 refreshing
